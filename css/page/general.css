@@ -23,6 +23,17 @@ Page CSS
     --font-size--sm: 10px;
     --font-size--lg: 18px;
     --font-size--xl: 24px;
+
+    --font-size--heading: 56px;
+    --font-size--heading--h2: 32px;
+    --font-size--heading--h3: 24px;
+
+    --space: 1rem;
+    --space--xs: 0.33rem;
+    --space--sm: 0.66rem;
+    --space--lg: 1.33rem;
+    --sapce--xl: 1.66rem;
+    --space--xxl: 2rem;
 }
 
 * {
