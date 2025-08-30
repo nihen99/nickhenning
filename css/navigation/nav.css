@@ -4,7 +4,6 @@ Nav
 */
 
 .c-nav {
-    mix-blend-mode: difference;
     z-index: 9;
     position: fixed;
     top: 0;
@@ -15,6 +14,8 @@ Nav
     background-color: var(--color-component--lightgray);
     outline: 1px solid var(--color-component--gray);
     border-bottom-right-radius: var(--space--xxl);
+    mix-blend-mode: difference;
+    backdrop-filter: blur(4px) saturate(180%);
 }
 
 .c-nav__list {
