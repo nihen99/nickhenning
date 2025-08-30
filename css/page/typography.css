@@ -41,15 +41,11 @@ Subheadlines
 }
 
 .c-subheading--h2 {
-    font-size: var(--font-size--heading--h2) * 0.66;
+    font-size: var(--font-size--heading--h3);
 }
 
 .c-subheading--h3 {
-    font-size: var(--font-size--heading--h3) * 0.66;
-}
-
-.c-subheading--h4 {
-    font-size: var(--font-size--heading--h4) * 0.66;
+    font-size: var(--font-size--heading--h4);
 }
 
 /*
