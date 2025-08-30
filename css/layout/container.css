@@ -6,6 +6,7 @@ Container
 .container {
     max-width: var(--container);
     margin: var(--space--xxl) auto;
+    padding: 0 var(--space--xxl);
 }
 
 .container--full {

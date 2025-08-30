@@ -3,10 +3,10 @@ Page CSS
 -------------------------------------------
 */
 :root {
-    --container: 1200px;
+    --container: 1000px;
     --container--full: 100%;
     --container--sm: 800px;
-    --container--lg: 1000px;
+    --container--lg: 1200px;
 
     --color-component--white: #ffffff;
     --color-component--lightgray: #f9f9f9;
