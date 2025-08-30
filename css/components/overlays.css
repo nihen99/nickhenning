@@ -11,8 +11,8 @@ Overlay
 }
 
 .c-overlay__image {
-    border-bottom-left-radius: var(--space--xxxl);
-    border-bottom-right-radius: var(--space--xxxl);
+    border-bottom-left-radius: var(--space--xxl);
+    border-bottom-right-radius: var(--space--xxl);
 }
 
 .c-overlay__content {
@@ -29,6 +29,11 @@ Overlay
 @media (min-width: 600px) {}
 
 @media (min-width: 1000px) {
+    .c-overlay__image {
+        border-bottom-left-radius: var(--space--xxxl);
+        border-bottom-right-radius: var(--space--xxxl);
+    }
+
     .c-overlay__content {
         width: var(--container);
         left: 50%;
