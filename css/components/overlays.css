@@ -8,12 +8,11 @@ Overlay
     height: auto;
     position: relative;
     overflow: hidden;
-    border-bottom-left-radius: var(--space--xxl);
-    border-bottom-right-radius: var(--space--xxl);
 }
 
 .c-overlay__image {
-    
+    border-bottom-left-radius: var(--space--xxl) * 3;
+    border-bottom-right-radius: var(--space--xxl) * 3;
 }
 
 .c-overlay__content {
