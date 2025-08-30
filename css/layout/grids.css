@@ -9,13 +9,13 @@ Grids
 }
 
 /* Responsive Styles */
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
     .c-grid--66 {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: var(--space);
     }
 }
 
-@media only screen and (min-width: 1000px) {}
+@media (min-width: 1000px) {}
 
-@media only screen and (min-width: 1440px) {}
+@media (min-width: 1440px) {}
