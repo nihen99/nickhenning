@@ -13,3 +13,8 @@ Buttons
     font-weight: 300;
     color: var(--color-component--white);
 }
+
+.c-btn:active {
+    background-color: var(--color-component--primary);
+    color: var(--color-component--black);
+}
