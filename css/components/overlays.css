@@ -7,6 +7,9 @@ Overlay
     width: 100%;
     height: auto;
     position: relative;
+    overflow: hidden;
+    border-bottom-left-radius: var(--space--xxl);
+    border-bottom-right-radius: var(--space--xxl);
 }
 
 .c-overlay__image {
@@ -31,6 +34,10 @@ Overlay
         width: var(--container);
         left: 50%;
         transform: translateX(-50%);
+
+        p {
+            max-width: 80%;
+        }
     }
 }
 
