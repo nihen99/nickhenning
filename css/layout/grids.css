@@ -15,10 +15,14 @@ Grids
         grid-column-gap: var(--space);
     }
 
-    .c-grid--66 {
+    .c-grid--66,
+    .c-grid--93,
+    .c-grid--39 {
         grid-template-columns: repeat(2, 1fr);
     }
+}
 
+@media (min-width: 1000px) {
     .c-grid--93 {
         grid-template-columns: 66% 1fr;
     }
@@ -27,7 +31,5 @@ Grids
         grid-template-columns: 1fr 66%;
     }
 }
-
-@media (min-width: 1000px) {}
 
 @media (min-width: 1440px) {}
