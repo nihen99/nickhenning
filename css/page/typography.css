@@ -3,25 +3,13 @@ Typography CSS
 -------------------------------------------
 */
 
-h1,
-h2 {
-    font-weight: 700;
-    font-style: normal;
-}
-
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 500;
-    font-style: normal;
-}
-
 /*
 Headlines
 -------------------------------------------
 */
 .c-heading {
+    font-weight: 700;
+    font-style: normal;
     margin-bottom: var(--space);
 }
 
@@ -47,6 +35,8 @@ Subheadlines
 -------------------------------------------
 */
 .c-subheading {
+    font-weight: 600;
+    font-style: normal;
     margin-bottom: var(--space--sm);
 }
 
@@ -69,7 +59,7 @@ Paragraphs
 .c-text {
     color: var(--color-text);
     font-size: var(--font-size);
-    margin-bottom: var(--space);
+    margin-bottom: var(--space-xxl);
 }
 
 .c-text--inverted {
