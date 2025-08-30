@@ -36,3 +36,10 @@ Nav
     font-size: var(--font-size--sm);
     text-align: center;
 }
+
+.c-nav--initial {
+    position: absolute;
+    background-color: transparent;
+    outline: none;
+    border-radius: 0;
+}

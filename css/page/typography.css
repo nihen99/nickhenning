@@ -66,6 +66,7 @@ Paragraphs
     h2,
     h3,
     p,
+    a,
     li {
         color: var(--color-text--inverted);
     }
