@@ -14,6 +14,11 @@ Buttons
     color: var(--color-component--white);
 }
 
+.c-btn--inverted {
+    background-color: var(--color-component--white);
+    color: var(--color-text);
+}
+
 .c-btn:active {
     background-color: var(--color-primary);
     color: var(--color-component--black);
