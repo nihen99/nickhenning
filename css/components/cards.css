@@ -5,9 +5,9 @@ Cards
 
 .c-card {
     border: 2px solid var(--color-component--gray);
+    border-bottom: 4px;
     border-radius: var(--space--sm);
     background-color: var(--color-component--lightgray);
-    box-shadow: 0 8px 2px -4px rgba(0, 0, 0, 5%);
 }
 
 .c-card__content {
