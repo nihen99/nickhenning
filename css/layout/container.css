@@ -5,7 +5,7 @@ Container
 
 .container {
     max-width: var(--container);
-    margin: var(--space-xxl) auto;
+    margin: var(--space--xxl) auto;
 }
 
 .container--full {
@@ -16,12 +16,12 @@ Container
 
 .container--sm {
     max-width: var(--container--sm);
-    margin: var(--space-xxl) auto;
-    padding: 0 var(--space-xxl);
+    margin: var(--space--xxl) auto;
+    padding: 0 var(--space--xxl);
 }
 
 .container--lg {
     max-width: var(--container--lg);
-    margin: var(--space-xxl) auto;
-    padding: 0 var(--space-xxl);
+    margin: var(--space--xxl) auto;
+    padding: 0 var(--space--xxl);
 }
