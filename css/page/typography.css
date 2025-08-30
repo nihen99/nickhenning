@@ -63,7 +63,10 @@ Paragraphs
 
 .inverted {
     h1,
-    h2 {
+    h2,
+    h3,
+    p,
+    li {
         color: var(--color-text--inverted);
     }
 }
