@@ -10,7 +10,8 @@ Nav
     width: fit-content;
     height: fit-content;
     height: auto;
-    background-color: var(--color-component--white);
+    background-color: var(--color-component--lightgray);
+    outline: 1px solid var(--color-component--gray);
     border-bottom-right-radius: var(--space--xxl);
 }
 
