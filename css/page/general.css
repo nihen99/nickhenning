@@ -23,17 +23,12 @@ Page CSS
     --font-size--sm: 10px;
     --font-size--lg: 18px;
     --font-size--xl: 24px;
-
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-html {
-    font-size: var(--font-size);
 }
 
 
