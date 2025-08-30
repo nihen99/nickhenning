@@ -4,6 +4,7 @@ Nav
 */
 
 .c-nav {
+    z-index: 9;
     position: fixed;
     top: 50%;
     left: 0;
