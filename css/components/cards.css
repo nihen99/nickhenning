@@ -6,7 +6,7 @@ Cards
 .c-card {
     border: 1px solid var(--color-component--gray);
     border-radius: var(--space--sm);
-    background-color: var(--color-component--black);
+    background-color: var(--color-component--white);
 }
 
 .c-card__content {
