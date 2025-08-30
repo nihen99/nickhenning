@@ -4,16 +4,13 @@ Nav
 */
 
 .c-nav {
-    z-index: 9;
     position: fixed;
-    top: 50%;
+    top: 0;
     left: 0;
-    transform: translateY(-50%);
     width: fit-content;
     height: fit-content;
     height: auto;
-    background-color: var(--color-component--black);
-    border-top-right-radius: var(--space--xxl);
+    background-color: var(--color-component--white);
     border-bottom-right-radius: var(--space--xxl);
 }
 
@@ -22,7 +19,7 @@ Nav
     grid-row-gap: var(--space);
     justify-content: center;
     align-items: baseline;
-    padding: var(--space);
+    padding: var(--space--xxl) var(--space);
 }
 
 .c-nav__list__item {
@@ -31,7 +28,7 @@ Nav
     align-items: center;
     row-gap: var(--space--sm);
     justify-content: center;
-    color: var(--color-component--white);
+    color: var(--color-text);
 }
 
 .c-nav__list__item-title {
