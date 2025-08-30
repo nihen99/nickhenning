@@ -62,6 +62,11 @@ Nav
         mix-blend-mode: difference;
         backdrop-filter: blur(4px) saturate(180%);
     }
+
+    .c-nav__list {
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: var(--space--lg);
+    }
 }
 
 @media (min-width: 1000px) {}
