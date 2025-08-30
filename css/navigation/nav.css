@@ -20,7 +20,8 @@ Nav
 
 .c-nav__list {
     display: grid;
-    grid-row-gap: var(--space--lg);
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: var(--space--lg);
     justify-content: center;
     align-items: baseline;
     padding: var(--space--xxl) var(--space);
@@ -64,8 +65,8 @@ Nav
     }
 
     .c-nav__list {
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: var(--space--lg);
+        grid-template-columns: none;
+        grid-row-gap: var(--space--lg);
     }
 }
 
