@@ -4,6 +4,8 @@ Nav
 */
 
 .c-nav {
+    mix-blend-mode: difference;
+    z-index: 9;
     position: fixed;
     top: 0;
     left: 0;
@@ -35,11 +37,4 @@ Nav
 .c-nav__list__item-title {
     font-size: var(--font-size--sm);
     text-align: center;
-}
-
-.c-nav--initial {
-    position: absolute;
-    background-color: transparent;
-    outline: none;
-    border-radius: 0;
 }
