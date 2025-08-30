@@ -5,12 +5,15 @@ Typography CSS
 
 h1 {
     font-size: var(--font-size--heading);
+    margin-bottom: var(--space);
 }
 h2 {
     font-size: var(--font-size--heading--h2);
+    margin-bottom: var(--space);
 }
 h3 {
     font-size: var(--font-size--heading--h3);
+    margin-bottom: var(--space);
 }
 
 p {
