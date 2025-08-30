@@ -9,10 +9,9 @@ Images
 }
 
 .c-image--16x9,
-.c-image--21x9,
-.c-image--4x3 {
+.c-image--21x9 {
     object-fit: cover;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 4;
 }
 
 
