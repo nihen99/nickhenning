@@ -26,10 +26,12 @@ Overlay
 /* Responsive Styles */
 @media (min-width: 600px) {}
 
-@media (min-width: 1000px) {}
-
-@media (min-width: 1440px) {
+@media (min-width: 1000px) {
     .c-overlay__content {
         width: var(--container);
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
+
+@media (min-width: 1440px) {}
