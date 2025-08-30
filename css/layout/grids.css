@@ -20,11 +20,11 @@ Grids
     }
 
     .c-grid--93 {
-        grid-template-columns: repeat(66%, 1fr);
+        grid-template-columns: 66% 1fr;
     }
 
     .c-grid--39 {
-        grid-template-columns: repeat(1fr, 66%);
+        grid-template-columns: 1fr 66%;
     }
 }
 
