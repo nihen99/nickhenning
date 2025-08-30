@@ -15,7 +15,7 @@ Nav
     border-top-left-radius: var(--space--xxl);
     border-top-right-radius: var(--space--xxl);
     mix-blend-mode: difference;
-    backdrop-filter: blur(4px) saturate(180%);
+    backdrop-filter: blur(12px) saturate(180%);
 }
 
 .c-nav__list {
@@ -24,7 +24,7 @@ Nav
     grid-column-gap: var(--space--lg);
     justify-content: center;
     align-items: baseline;
-    padding: var(--space--xxl) var(--space);
+    padding: var(--space);
 }
 
 .c-nav__list__item {
@@ -48,7 +48,9 @@ Nav
 
 
 /* Responsive Styles */
-@media (min-width: 600px) {
+@media (min-width: 600px) {}
+
+@media (min-width: 1000px) {
     .c-nav {
         z-index: 9;
         position: fixed;
@@ -67,9 +69,8 @@ Nav
     .c-nav__list {
         grid-template-columns: none;
         grid-row-gap: var(--space--lg);
+        padding: var(--space--xxl) var(--space);
     }
 }
-
-@media (min-width: 1000px) {}
 
 @media (min-width: 1440px) {}
