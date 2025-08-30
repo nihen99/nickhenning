@@ -3,20 +3,75 @@ Typography CSS
 -------------------------------------------
 */
 
-h1 {
-    font-size: var(--font-size--heading);
-    margin-bottom: var(--space);
-}
+h1,
 h2 {
-    font-size: var(--font-size--heading--h2);
-    margin-bottom: var(--space);
+    font-weight: 700;
+    font-style: normal;
 }
-h3 {
-    font-size: var(--font-size--heading--h3);
+
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*
+Headlines
+-------------------------------------------
+*/
+.c-heading {
     margin-bottom: var(--space);
 }
 
-p {
+.c-heading--has-subheading {
+    margin-bottom: 0;
+}
+
+.c-heading--h1 {
+    font-size: var(--font-size--heading);
+}
+
+.c-heading--h2 {
+    font-size: var(--font-size--heading--h2);
+}
+
+.c-heading--h3 {
+    font-size: var(--font-size--heading--h3);
+}
+
+
+/*
+Subheadlines
+-------------------------------------------
+*/
+.c-subheading {
+    margin-bottom: var(--space--sm);
+}
+
+.c-subheading--h2 {
+    font-size: var(--font-size--heading--h2) * 0.66;
+}
+
+.c-subheading--h3 {
+    font-size: var(--font-size--heading--h3) * 0.66;
+}
+
+.c-subheading--h4 {
+    font-size: var(--font-size--heading--h4) * 0.66;
+}
+
+/*
+Paragraphs
+-------------------------------------------
+*/
+.c-text {
+    color: var(--color-text);
     font-size: var(--font-size);
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space);
+}
+
+.c-text--inverted {
+    color: var(--color-text--inverted);
 }

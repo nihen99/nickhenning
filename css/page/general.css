@@ -12,7 +12,7 @@ Page CSS
     --color-component--black: #0a0a0a;
 
     --color-text: var(--color-component--black);
-    --color-text-invert: var(--color-component--white);
+    --color-text--inverted: var(--color-component--white);
 
     --color-primary: rgba(231, 18, 202, 100%);
     --color-primary--66: rgba(231, 18, 202, 66%);
@@ -24,15 +24,18 @@ Page CSS
     --font-size--lg: 18px;
     --font-size--xl: 24px;
 
-    --font-size--heading: 56px;
-    --font-size--heading--h2: 32px;
-    --font-size--heading--h3: 24px;
+    --font-size--heading: 64px;
+    --font-size--heading--h2: 40px;
+    --font-size--heading--h3: 32px;
+    --font-size--heading--h4: 24px;
+    --font-size--heading--h5: 16px;
+    --font-size--heading--h6: var(--font-size);
 
     --space: 1rem;
     --space--xs: 0.33rem;
     --space--sm: 0.66rem;
     --space--lg: 1.33rem;
-    --sapce--xl: 1.66rem;
+    --space--xl: 1.66rem;
     --space--xxl: 2rem;
 }
 
@@ -42,14 +45,14 @@ Page CSS
     padding: 0;
 }
 
+body {
+    font-family: "Inter", sans-serif;
+}
+
 
 /* Responsive Styles */
-@media only screen and (min-width: var(--bp--tablet)) {
+@media only screen and (min-width: var(--bp--tablet)) {}
 
-}
-@media only screen and (min-width: var(--bp--laptop)) {
+@media only screen and (min-width: var(--bp--laptop)) {}
 
-}
-@media only screen and (min-width: var(--bp--desktop)) {
-
-}
+@media only screen and (min-width: var(--bp--desktop)) {}
