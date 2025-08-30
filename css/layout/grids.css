@@ -18,7 +18,7 @@ Grids
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .c-grid-444 {
+    .c-grid--444 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
