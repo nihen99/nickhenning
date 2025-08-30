@@ -11,7 +11,7 @@ Loading
     height: 100%;
     background-color: rgba(255, 255, 255, 90%);
     backdrop-filter: saturate(180%) blur(10px);
-    animation: loading forwards 1000ms;
+    animation: loading forwards 2000ms ease;
 }
 
 @keyframes loading {
