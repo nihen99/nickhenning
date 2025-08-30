@@ -4,24 +4,28 @@ Container
 */
 
 .container {
+    height: fit-content;
     max-width: var(--container);
     margin: var(--space--xxl) auto;
     padding: 0 var(--space--xxl);
 }
 
 .container--full {
+    height: fit-content;
     max-width: var(--container--full);
     margin: 0;
     padding: 0;
 }
 
 .container--sm {
+    height: fit-content;
     max-width: var(--container--sm);
     margin: var(--space--xxl) auto;
     padding: 0 var(--space--xxl);
 }
 
 .container--lg {
+    height: fit-content;
     max-width: var(--container--lg);
     margin: var(--space--xxl) auto;
     padding: 0 var(--space--xxl);
