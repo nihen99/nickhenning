@@ -7,10 +7,10 @@ Page CSS
     --bp--laptop: 1200px;
     --bp--desktop: 1440px;
 
-    --container: 1440px;
+    --container: 1200px;
     --container--full: 100%;
-    --container--sm: 1200px;
-    --container--lg: 1600px;
+    --container--sm: 800px;
+    --container--lg: 1000px;
 
     --color-component--white: #fafaff;
     --color-component--gray: #33333a;
