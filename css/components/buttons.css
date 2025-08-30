@@ -15,6 +15,6 @@ Buttons
 }
 
 .c-btn:active {
-    background-color: var(--color-component--primary);
+    background-color: var(--color-primary);
     color: var(--color-component--black);
 }
