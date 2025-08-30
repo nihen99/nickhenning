@@ -15,6 +15,9 @@ Overlay
 
 .c-overlay__content {
     position: absolute;
+    max-width: var(--container);
+    margin: var(--space--xxl) auto;
+    padding: 0 var(--space--xxl);
     bottom: 0;
     left: 0;
 }
