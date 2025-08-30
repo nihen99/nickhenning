@@ -5,11 +5,15 @@ Nav
 
 .c-nav {
     position: fixed;
-    bottom: 0;
+    top: 50%;
     left: 0;
-    width: 100%;
+    transform: translateY(-50%);
+    width: fit-content;
+    height: fit-content;
     height: auto;
     background-color: var(--color-component--black);
+    border-top-left-radius: var(--space--xxl);
+    border-bottom-left-radius: var(--space--xxl);
 }
 
 .c-nav__list {
@@ -25,7 +29,6 @@ Nav
     align-items: center;
     row-gap: var(--space--sm);
     justify-content: center;
-    padding: var(--space);
     color: var(--color-component--white);
 }
 
