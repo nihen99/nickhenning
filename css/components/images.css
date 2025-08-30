@@ -1,0 +1,19 @@
+/*
+Images
+-------------------------------------------
+*/
+
+.c-image {
+    width: 100%;
+    height: auto;
+}
+
+.c-image--16x9 {
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
+
+.c-image--4x3 {
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+}

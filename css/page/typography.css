@@ -8,6 +8,7 @@ Headlines
 -------------------------------------------
 */
 .c-heading {
+    color: var(--color-text);
     font-weight: 700;
     font-style: normal;
     margin-bottom: var(--space);
@@ -35,6 +36,7 @@ Subheadlines
 -------------------------------------------
 */
 .c-subheading {
+    color: var(--color-text);
     font-weight: 600;
     font-style: normal;
     margin-bottom: var(--space--sm);
@@ -59,6 +61,6 @@ Paragraphs
     margin-bottom: var(--space--xxl);
 }
 
-.c-text--inverted {
+.inverted {
     color: var(--color-text--inverted);
 }

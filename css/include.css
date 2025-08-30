@@ -12,3 +12,5 @@ Note: Imports all the CSS Files
 
 @import url(components/cards.css);
 @import url(components/buttons.css);
+@import url(components/overlays.css);
+@import url(components/images.css);
