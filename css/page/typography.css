@@ -59,7 +59,7 @@ Paragraphs
 .c-text {
     color: var(--color-text);
     font-size: var(--font-size);
-    margin-bottom: var(--space-xxl);
+    margin-bottom: var(--space--xxl);
 }
 
 .c-text--inverted {
