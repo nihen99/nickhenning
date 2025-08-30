@@ -5,11 +5,11 @@ Cards
 
 .c-card {
     border: 2px solid var(--color-component--gray);
-    border-bottom-width: 4px;
+    border-bottom-width: 8px;
     border-radius: var(--space--sm);
     background-color: var(--color-component--lightgray);
 }
 
 .c-card__content {
-    padding: var(--space);
+    padding: var(--space--lg);
 }
