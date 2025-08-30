@@ -1,0 +1,21 @@
+/*
+Grids
+-------------------------------------------
+*/
+
+.c-grid {
+    display: grid;
+    grid-row-gap: var(--space);
+}
+
+/* Responsive Styles */
+@media only screen and (min-width: var(--bp--tablet)) {
+    .c-grid--66 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: var(--space);
+    }
+}
+
+@media only screen and (min-width: var(--bp--laptop)) {}
+
+@media only screen and (min-width: var(--bp--desktop)) {}
