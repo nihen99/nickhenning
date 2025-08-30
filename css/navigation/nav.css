@@ -17,7 +17,7 @@ Nav
 
 .c-nav__list {
     display: grid;
-    grid-row-gap: var(--space);
+    grid-row-gap: var(--space--lg);
     justify-content: center;
     align-items: baseline;
     padding: var(--space--xxl) var(--space);
@@ -27,7 +27,7 @@ Nav
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: var(--space--sm);
+    row-gap: var(--space--xs);
     justify-content: center;
     color: var(--color-text);
 }
