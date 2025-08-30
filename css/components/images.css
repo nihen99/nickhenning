@@ -8,12 +8,32 @@ Images
     height: auto;
 }
 
-.c-image--16x9 {
-    object-fit: cover;
-    aspect-ratio: 16 / 9;
-}
-
+.c-image--16x9,
+.c-image--21x9,
 .c-image--4x3 {
     object-fit: cover;
     aspect-ratio: 4 / 3;
 }
+
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    .c-image--16x9 {
+        object-fit: cover;
+        aspect-ratio: 16 / 9;
+    }
+
+    .c-image--21x9 {
+        object-fit: cover;
+        aspect-ratio: 21 / 9;
+    }
+
+    .c-image--4x3 {
+        object-fit: cover;
+        aspect-ratio: 4 / 3;
+    }
+}
+
+@media (min-width: 1000px) {}
+
+@media (min-width: 1440px) {}
