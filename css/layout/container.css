@@ -1,0 +1,27 @@
+/*
+Container
+-------------------------------------------
+*/
+
+.container {
+    max-width: var(--container);
+    margin: 0 auto;
+}
+
+.container--full {
+    max-width: var(--container--full);
+    margin: 0;
+    padding: 0;
+}
+
+.container--sm {
+    max-width: var(--container--sm);
+    margin: 0 auto;
+    padding: 0 var(--space-xxl);
+}
+
+.container--lg {
+    max-width: var(--container--lg);
+    margin: 0 auto;
+    padding: 0 var(--space-xxl);
+}

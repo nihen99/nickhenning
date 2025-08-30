@@ -7,6 +7,11 @@ Page CSS
     --bp--laptop: 1200px;
     --bp--desktop: 1440px;
 
+    --container: 1440px;
+    --container--full: 100%;
+    --container--sm: 1200px;
+    --container--lg: 1600px;
+
     --color-component--white: #fafaff;
     --color-component--gray: #33333a;
     --color-component--black: #0a0a0a;
