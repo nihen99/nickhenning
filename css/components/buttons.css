@@ -6,6 +6,7 @@ Buttons
 .c-btn {
     width: fit-content;
     background-color: var(--color-component--black);
+    border: none;
     border-radius: var(--space--xs);
     padding: var(--space--sm) var(--space);
     font-size: var(--font-size);

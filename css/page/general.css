@@ -50,6 +50,14 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+:focus-visible {
+    outline: 2px solid var(--color-primary);
+}
+
+img {
+    filter: grayscale(1);
+}
+
 /* Responsive Styles */
 @media (min-width: 600px) {}
 
