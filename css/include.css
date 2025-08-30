@@ -4,4 +4,5 @@ Note: Imports all the CSS Files
 -------------------------------------------
 */
 
-@import url(general/fonts.css);
+@import url(fonts/fonts.css);
+@import url(page/general.css);
