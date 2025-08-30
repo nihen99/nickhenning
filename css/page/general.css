@@ -27,10 +27,10 @@ Page CSS
     --font-size--lg: 18px;
     --font-size--xl: 24px;
 
-    --font-size--heading: 52px;
-    --font-size--heading--h2: 48px;
-    --font-size--heading--h3: 24px;
-    --font-size--heading--h4: 18px;
+    --font-size--heading: 48px;
+    --font-size--heading--h2: 42px;
+    --font-size--heading--h3: 36px;
+    --font-size--heading--h4: 30px;
 
     --space: 1rem;
     --space--xs: 0.33rem;
