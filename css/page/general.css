@@ -60,6 +60,13 @@ img {
     filter: grayscale(1);
 }
 
+a,
+button,
+[role="button"],
+[tabindex] {
+    -webkit-tap-highlight-color: transparent;
+}
+
 /* Responsive Styles */
 @media (min-width: 600px) {}
 
