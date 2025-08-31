@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('.js-slick-multiple').slick({
         infinite: false,
-        slidesToShow: 1,
-        slidesToScroll: 3
+        slidesToShow: 3,
+        slidesToScroll: 1
     });
 });
