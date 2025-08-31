@@ -9,6 +9,7 @@ Slider
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 var(--space--lg);
     margin: var(--space--lg) 0;
 }
 
@@ -16,7 +17,7 @@ Slider
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    column-gap: var(--space--xs);
+    column-gap: var(--space--sm);
 }
 
 .c-slider__dots {}
@@ -37,11 +38,9 @@ Slider
 }
 
 .slick-arrows {
-
     .slick-prev,
     .slick-next {
         line-height: 1;
-        transition: var(--transition);
     }
 
     .slick-disabled {
