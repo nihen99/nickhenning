@@ -38,6 +38,9 @@ Lightbox
 
 .c-lightbox__arrow:active {
     background-color: var(--color-primary);
+}
+
+.c-lightbox__arrow:active::before {
     color: var(--color-component--black);
 }
 
@@ -60,11 +63,11 @@ Lightbox
 }
 
 .c-lightbox__arrow--prev::before {
-    content: '\2191';
+    content: '\2B06';
 }
 
 .c-lightbox__arrow--next::before {
-    content: '\2193';
+    content: '\2B07';
 }
 
 .c-lightbox__close {
@@ -102,11 +105,11 @@ Lightbox
     }
 
     .c-lightbox__arrow--prev::before {
-        content: '\2190';
+        content: '\276E';
     }
 
     .c-lightbox__arrow--next::before {
-        content: '\2192';
+        content: '\276F';
     }
 }
 
