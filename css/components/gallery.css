@@ -11,7 +11,8 @@ Gallery
     grid-gap: var(--space--sm);
 
     img {
+        cursor: nesw-resize;
         object-fit: cover;
-        aspect-ratio: 4 / 3;
+        aspect-ratio: 1 / 1;
     }
 }
