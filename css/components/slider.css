@@ -85,6 +85,7 @@ Slider
         border-radius: 4px;
         background-color: var(--color-component--gray);
         color: var(--color-component--black);
+        line-height: 1;
     }
 }
 
