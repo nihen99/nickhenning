@@ -4,9 +4,11 @@
         "footerText": "© 2025 Nick Henning"
     },
     "homepage": {
-        "heroHeadline": "Willkommen auf meiner offiziellen Website",
-        "heroSubtext": "Musik, Code und kreative Energie",
-        "heroImage": "media/gallery/placeholder_02.webp"
+        "overlayHeadline": "Nick Henning",
+        "overlaySubheadline": "Musician, Photographer & Dev",
+        "overlayDescription": "The guitar is my passion and the heart of everything I do as a musician. For over adecade, I’ve been writing songs, crafting riffs, and pouring emotion and energy into my music. Vocals play just as big a role—whether raw and powerful, melancholic, or straight to the point. Stylistically, I move between pop-punk and alternative rock—somewhere between driving, atmospheric, and a little nostalgic.",
+        "overlayImage": "media/placeholder.webp",
+        "overlayButton": "More About Me"
     },
     "me": {
         "bio": "Ich bin Musiker, Gitarrist und Webentwickler aus Deutschland.",
