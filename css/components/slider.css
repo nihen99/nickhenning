@@ -24,9 +24,13 @@ Slider
 
 /* Slick CSS Overwrite */
 .slick-arrows {
+    .slick-prex,
+    .slick-next {
+        transition: all 300ms ease;
+    }
     .slick-disabled {
         pointer-events: none;
-        opacity: 0.5;
+        opacity: 0.3;
     }
 }
 
@@ -46,16 +50,21 @@ Slider
         padding: 0;
     }
 
-    li>button {
+    li.slick-active > button {
+        background-color: var(--color-primary);
+        color: var(--color-component--black);
+    }
+
+    li > button {
         display: flex;
         justify-content: center;
         align-items: center;
         width: var(--space);
         height: var(--space);
-        padding: var(--space--sm);
+        padding: var(--space);
         border: none;
-        border-radius: 4px;
-        background-color: var(--color-component--black);
+        border-radius: 2px;
+        background-color: var(--color-component--lightgray);
         color: var(--color-component--white);
     }
 }
