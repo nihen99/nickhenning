@@ -9,6 +9,7 @@ Gallery
     grid-gap: var(--space--sm);
 
     img {
-        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        aspect-ratio: 4 / 3;
     }
 }
