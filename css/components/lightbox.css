@@ -11,7 +11,7 @@ Lightbox
     z-index: 10;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     justify-content: center;
     align-items: center;
 }
@@ -22,6 +22,7 @@ Lightbox
     max-width: 90%;
     max-height: 80%;
     border-radius: var(--space--lg);
+    border: 1px solid var(--color-component--white);
 }
 
 .c-lightbox__close {
@@ -29,5 +30,7 @@ Lightbox
     position: fixed;
     top: var(--space--lg);
     right: var(--space--lg);
+    font-size: var(--font-size--xl);
+    font-weight: 700;
     color: var(--color-primary);
 }
