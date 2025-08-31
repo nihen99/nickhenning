@@ -17,10 +17,10 @@ Page CSS
     --color-text: var(--color-component--black);
     --color-text--inverted: var(--color-component--white);
 
-    --color-primary: rgba(231, 18, 202, 100%);
-    --color-primary--66: rgba(231, 18, 202, 66%);
-    --color-primary--50: rgba(231, 18, 202, 50%);
-    --color-primary--33: rgba(231, 18, 202, 33%);
+    --color-primary: rgb(18, 231, 107);
+    --color-primary--66: rgba(18, 231, 107, 66%);
+    --color-primary--50: rgba(18, 231, 107, 50%);
+    --color-primary--33: rgba(18, 231, 107, 33%);
 
     --font-size: 14px;
     --font-size--sm: 10px;
