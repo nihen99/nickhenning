@@ -59,8 +59,9 @@ Lightbox
     position: fixed;
     top: var(--space--xl);
     right: var(--space--xl);
-        border: none;
-        background-color: transparent;
+    padding: var(--space);
+    border: none;
+    background-color: transparent;
     font-size: var(--font-size--xl);
     font-weight: 700;
     color: var(--color-primary);
