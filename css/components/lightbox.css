@@ -31,7 +31,7 @@ Lightbox
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: var(--space);
+    padding: var(--space--sm) var(--space--xl);
     background-color: var(--color-component--black);
     border: none;
 }
@@ -88,6 +88,10 @@ Lightbox
 @media (min-width: 600px) {
     .c-lightbox {
         flex-direction: row;
+    }
+    
+    .c-lightbox__arrow {
+        padding: var(--space);
     }
 
     .c-lightbox__arrow--prev {
