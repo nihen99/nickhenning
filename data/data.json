@@ -1,25 +1,6 @@
 {
     "general": {
-        "navLinkHome": {
-            "href": "index.html",
-            "title": "Homepage"
-        },
-        "navLinkMe": {
-            "href": "me.html",
-            "title": "About me"
-        },
-        "navLinkProjects": {
-            "href": "projects.html",
-            "title": "Projects"
-        },
-        "navLinkMusic": {
-            "href": "music.html",
-            "title": "Music"
-        },
-        "navLinkGallery": {
-            "href": "gallery.html",
-            "title": "Gallery"
-        }
+        
     },
     "homepage": {
         "overlayHeading": "Nick Henning",
