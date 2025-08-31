@@ -1,7 +1,6 @@
 fetch('data/data.json')
     .then(response => response.json())
     .then(data => {
-        // Alle Kategorien durchgehen
         for (const category in data) {
             const entries = data[category];
 
@@ -10,21 +9,31 @@ fetch('data/data.json')
                 const value = entries[id];
 
                 if (element) {
-                    // Wenn der Wert ein Objekt mit href und title ist → Link
+                    // Link-Objekt mit href und title
                     if (typeof value === 'object' && value.href && value.title) {
-                        element.href = value.href;
-                        element.textContent = value.title;
+                        if (element.tagName === 'A') {
+                            element.href = value.href;
+                            element.textContent = value.title;
+                        }
                     }
-                    // Wenn es ein <img> ist, setze src
+                    // Bild-Objekt mit src und title
+                    else if (typeof value === 'object' && value.src && element.tagName === 'IMG') {
+                        element.src = value.src;
+                        if (value.title) {
+                            element.title = value.title;
+                            element.alt = value.title;
+                        }
+                    }
+                    // <img> mit einfachem src-String
                     else if (element.tagName === 'IMG') {
                         element.src = value;
                     }
-                    // Wenn es ein <a> ist, setze href und optional Text
+                    // <a> mit einfachem String
                     else if (element.tagName === 'A') {
                         element.href = value;
                         element.textContent = value;
                     }
-                    // Sonst: Textinhalt setzen
+                    // Standard: Textinhalt
                     else {
                         element.textContent = value;
                     }
