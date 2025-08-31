@@ -1,0 +1,41 @@
+/*
+Slider
+-------------------------------------------
+*/
+
+.c-slider {}
+
+.c-slider__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .slick-dots {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        column-gap: var(--space--xs);
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li > button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: var(--space);
+            height: var(--space);
+            padding: var(--space--xs);
+            border-radius: var(--space--sm);
+            background-color: var(--color-component--black);
+            color: var(--color-component--white);
+        }
+    }
+}

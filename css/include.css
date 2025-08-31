@@ -11,11 +11,12 @@ Include CSS
 
 @import url(navigation/nav.css);
 
+/* External CSS */
+@import url(../lib/slick/slick.css);
+
 @import url(components/loading.css);
 @import url(components/cards.css);
 @import url(components/buttons.css);
 @import url(components/overlays.css);
 @import url(components/images.css);
-
-/* External CSS */
-@import url(../lib/slick/slick.css);
+@import url(components/slider.css);
