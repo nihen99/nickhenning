@@ -13,6 +13,7 @@ Buttons
     font-size: var(--font-size);
     font-weight: 300;
     color: var(--color-component--white);
+    line-height: 1;
 }
 
 .c-btn--inverted {

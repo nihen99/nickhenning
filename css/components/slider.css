@@ -29,7 +29,7 @@ Slider
 /* Slick CSS Overwrite */
 .slick-arrows {
 
-    .slick-prex,
+    .slick-prev,
     .slick-next {
         line-height: 1;
         transition: var(--transition);
