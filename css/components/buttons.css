@@ -14,7 +14,6 @@ Buttons
     font-weight: 300;
     color: var(--color-component--white);
     line-height: 1;
-    text-decoration: none;
 }
 
 .c-btn--inverted {

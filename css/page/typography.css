@@ -80,7 +80,6 @@ a {
     text-decoration: none;
 }
 
-a:hover,
 a:focus-visible {
     text-decoration: solid;
     text-decoration-line: underline;
