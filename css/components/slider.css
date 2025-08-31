@@ -45,7 +45,7 @@ Slider
 
     .slick-disabled {
         pointer-events: none;
-        opacity: 0.3;
+        opacity: 0.1;
     }
 }
 
@@ -70,6 +70,7 @@ Slider
         cursor: default;
         background-color: var(--color-component--black);
         color: var(--color-component--white);
+        font-weight: 600;
     }
 
     li>button {
