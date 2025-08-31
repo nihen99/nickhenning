@@ -9,6 +9,7 @@ Slider
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: var(--space) 0;
 }
 
 .c-slider__arrows {
@@ -22,6 +23,13 @@ Slider
 
 
 /* Slick CSS Overwrite */
+.slick-arrows {
+    .slick-disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
 .slick-dots {
     list-style: none;
     margin: 0;
