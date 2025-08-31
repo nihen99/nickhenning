@@ -5,10 +5,6 @@ Slider
 
 .c-slider {}
 
-.c-slider__item {
-    padding: 0 var(--space);
-}
-
 .c-slider__nav {
     display: flex;
     justify-content: space-between;
@@ -29,6 +25,18 @@ Slider
 /* Slick CSS Overwrite */
 .slick-track {
     display: flex;
+}
+
+.slick-slide {
+    padding: 0 var(--space);
+}
+
+.slick-slide:nth-of-type(odd) {
+    padding: 0 var(--space) 0 0;
+}
+
+.slick-slide:nth-of-type(even) {
+    padding: 0 var(--space) 0 var(--space);
 }
 
 .slick-arrows {
