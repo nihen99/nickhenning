@@ -5,7 +5,8 @@
     },
     "homepage": {
         "heroHeadline": "Willkommen auf meiner offiziellen Website",
-        "heroSubtext": "Musik, Code und kreative Energie"
+        "heroSubtext": "Musik, Code und kreative Energie",
+        "heroImage": "media/gallery/placeholder_02.webp"
     },
     "me": {
         "bio": "Ich bin Musiker, Gitarrist und Webentwickler aus Deutschland.",
