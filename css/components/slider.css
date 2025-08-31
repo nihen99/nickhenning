@@ -5,7 +5,9 @@ Slider
 
 .c-slider {}
 
-.c-slider__item {}
+.c-slider__item {
+    padding: 0 var(--space);
+}
 
 .c-slider__nav {
     display: flex;
@@ -27,7 +29,6 @@ Slider
 /* Slick CSS Overwrite */
 .slick-track {
     display: flex;
-    column-gap: var(--space--lg);
 }
 
 .slick-arrows {
