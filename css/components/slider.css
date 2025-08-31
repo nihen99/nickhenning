@@ -6,7 +6,7 @@ Slider
 .c-slider {}
 
 .c-slider__item {
-    margin: 0;
+    padding: var(--space--lg);
 }
 
 .c-slider__nav {
@@ -80,11 +80,7 @@ Slider
 }
 
 /* Responsive Styles */
-@media (min-width: 600px) {
-    .c-slider__item {
-        margin: var(--space--sm);
-    }
-}
+@media (min-width: 600px) {}
 
 @media (min-width: 1000px) {}
 
