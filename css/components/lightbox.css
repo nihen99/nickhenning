@@ -26,15 +26,23 @@ Lightbox
 }
 
 .c-lightbox__arrow {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: var(--space);
     background-color: var(--color-component--black);
+    border: none;
     color: var(--color-primary);
     font-size: var(--font-size--xl);
     font-weight: 700;
     line-height: 1;
+}
+
+.c-lightbox__arrow:active,
+.c-lightbox__arrow:focus-visible {
+    background-color: var(--color-primary);
+    color: var(--color-component--black);
 }
 
 .c-lightbox__arrow--prev {
