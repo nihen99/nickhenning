@@ -89,11 +89,15 @@ Lightbox
 
     .c-lightbox__arrow--prev {
         border-top-left-radius: var(--space--sm);
+        border-top-right-radius: 0;
         border-bottom-left-radius: var(--space--sm);
+        border-bottom-right-radius: 0;
     }
 
     .c-lightbox__arrow--next {
+        border-top-left-radius: 0;
         border-top-right-radius: var(--space--sm);
+        border-bottom-left-radius: 0;
         border-bottom-right-radius: var(--space--sm);
     }
 
