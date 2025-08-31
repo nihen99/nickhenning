@@ -10,13 +10,19 @@ fetch('data/data.json')
                 const value = entries[id];
 
                 if (element) {
+                    // Wenn der Wert ein Objekt mit href und title ist → Link
+                    if (typeof value === 'object' && value.href && value.title) {
+                        element.href = value.href;
+                        element.textContent = value.title;
+                    }
                     // Wenn es ein <img> ist, setze src
-                    if (element.tagName === 'IMG') {
+                    else if (element.tagName === 'IMG') {
                         element.src = value;
                     }
-                    // Wenn es ein <a> ist, setze href
+                    // Wenn es ein <a> ist, setze href und optional Text
                     else if (element.tagName === 'A') {
                         element.href = value;
+                        element.textContent = value;
                     }
                     // Sonst: Textinhalt setzen
                     else {
