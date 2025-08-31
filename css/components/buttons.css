@@ -5,6 +5,7 @@ Buttons
 
 .c-btn {
     cursor: pointer;
+    display: block;
     width: fit-content;
     background-color: var(--color-component--black);
     border: none;
