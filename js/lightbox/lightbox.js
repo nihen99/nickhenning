@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('.js-lightbox-trigger').click(function () {
         const imgSrc = $(this).attr('src');
         $('.c-lightbox__img').attr('src', imgSrc);
-        $('.c-lightbox').fadeIn();
+        $('.c-lightbox').fadeIn().css( "display", "flex" );
     });
 
     $('.c-lightbox__close, .c-lightbox').click(function (e) {

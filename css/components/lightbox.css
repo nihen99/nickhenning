@@ -12,7 +12,6 @@ Lightbox
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(12px) saturate(180%);
     justify-content: center;
     align-items: center;
 }
