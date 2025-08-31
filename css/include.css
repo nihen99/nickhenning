@@ -16,6 +16,3 @@ Include CSS
 @import url(components/buttons.css);
 @import url(components/overlays.css);
 @import url(components/images.css);
-
-/* External CSS */
-@import url(../lib/slick/slick.css);
