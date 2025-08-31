@@ -60,11 +60,11 @@ Lightbox
 }
 
 .c-lightbox__arrow--prev::before {
-    content: '&#8593;';
+    content: '\2191';
 }
 
 .c-lightbox__arrow--next::before {
-    content: '&#8595;';
+    content: '\2193';
 }
 
 .c-lightbox__close {
@@ -98,11 +98,11 @@ Lightbox
     }
 
     .c-lightbox__arrow--prev::before {
-        content: '&#8592;';
+        content: '\2190';
     }
 
     .c-lightbox__arrow--next::before {
-        content: '&#8594;';
+        content: '\2192';
     }
 }
 
