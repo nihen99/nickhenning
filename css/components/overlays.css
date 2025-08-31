@@ -11,6 +11,7 @@ Overlay
 }
 
 .c-overlay__image {
+    filter: brightness(0.66);
     border-bottom-left-radius: var(--space--xxl);
     border-bottom-right-radius: var(--space--xxl);
 }
