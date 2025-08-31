@@ -17,7 +17,11 @@
     "card": {
         "aboutMe": {
             "title": "Titel",
-            "description": "Description"
+            "description": "Description",
+            "button": {
+                "href": "me.html",
+                "title": "About me"
+            }
         }
     }
 }
