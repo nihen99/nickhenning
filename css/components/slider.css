@@ -46,7 +46,6 @@ Slider
     align-items: center;
 
     li {
-        cursor: pointer;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -54,17 +53,19 @@ Slider
 
     li.slick-active > button {
         pointer-events: none;
+        cursor: default;
         background-color: var(--color-component--black);
         color: var(--color-component--white);
     }
 
     li > button {
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: var(--space);
-        height: var(--space);
-        padding: var(--space);
+        width: var(--space--sm);
+        height: var(--space--sm);
+        padding: var(--space--sm);
         border: none;
         border-radius: 2px;
         background-color: var(--color-component--gray);
