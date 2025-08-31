@@ -3,7 +3,9 @@ Gallery
 -------------------------------------------
 */
 
-.c-gallery {
+.c-gallery {}
+
+.c-gallery__grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: var(--space--sm);
