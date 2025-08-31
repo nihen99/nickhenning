@@ -16,21 +16,15 @@
         }
     },
     "me": {
-        "bio": "Ich bin Musiker, Gitarrist und Webentwickler aus Deutschland.",
-        "portrait": "media/images/portrait.jpg"
+        
     },
-    "developement": {
-        "skills": "HTML, CSS, JavaScript, React, Node.js"
+    "projects": {
+        
     },
     "music": {
-        "spotifyLink": "https://open.spotify.com/artist/xyz",
-        "latestTrack": "media/music/track.mp3"
+
     },
-    "photography": {
-        "galleryIntro": "Einblicke in meine visuelle Welt",
-        "images": [
-            "media/photos/photo1.jpg",
-            "media/photos/photo2.jpg"
-        ]
+    "gallery": {
+        
     }
 }

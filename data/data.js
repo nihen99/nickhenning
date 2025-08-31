@@ -4,9 +4,10 @@ fetch('data/data.json')
         for (const category in data) {
             const entries = data[category];
 
-            for (const id in entries) {
-                const element = document.getElementById(id);
-                const value = entries[id];
+            for (const key in entries) {
+                const elementId = `${category}-${key}`;
+                const element = document.getElementById(elementId);
+                const value = entries[key];
 
                 if (element) {
                     // Link-Objekt mit href und title
