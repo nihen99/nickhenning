@@ -29,13 +29,23 @@ Lightbox
     display: flex;
     justify-content: center;
     align-items: center;
-    width: var(--space--xl);
-    height: var(--space--xl);
-    padding: var(--space);
     background-color: var(--color-component--black);
     color: var(--color-primary);
     font-size: var(--font-size--xl);
+    font-weight: 700;
     line-height: 1;
+}
+
+.c-lightbox__arrow--prev {
+    padding: var(--space) var(--space) var(--space) var(--space-lg);
+    border-top-left-radius: var(--space);
+    border-bottom-left-radius: var(--space);
+}
+
+.c-lightbox__arrow--next {
+    padding: var(--space) var(--space-lg) var(--space) var(--space);
+    border-top-right-radius: var(--space);
+    border-bottom-right-radius: var(--space);
 }
 
 .c-lightbox__close {
