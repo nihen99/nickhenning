@@ -1,40 +1,36 @@
 {
-    "general": {
-        
-    },
-    "homepage": {
-        "overlayHeading": "Nick Henning",
-        "overlaySubheading": "Musician, Photographer & Dev",
-        "overlayDescription": "The guitar is my passion and the heart of everything I do as a musician. For over adecade, I’ve been writing songs, crafting riffs, and pouring emotion and energy into my music. Vocals play just as big a role—whether raw and powerful, melancholic, or straight to the point. Stylistically, I move between pop-punk and alternative rock—somewhere between driving, atmospheric, and a little nostalgic.",
-        "overlayImage": {
-            "src": "media/placeholder.webp",
-            "title": "Nick Henning | Official Website"
+    "overlay": {
+        "homepage": {
+            "heading": "Nick Henning",
+            "subheading": "Musician, Photographer & Dev",
+            "description": "The guitar is my passion and the heart of everything I do as a musician. For over adecade, I’ve been writing songs, crafting riffs, and pouring emotion and energy into my music. Vocals play just as big a role—whether raw and powerful, melancholic, or straight to the point. Stylistically, I move between pop-punk and alternative rock—somewhere between driving, atmospheric, and a little nostalgic.",
+            "image": {
+                "src": "media/placeholder.webp",
+                "title": "Nick Henning | Official Website"
+            },
+            "button": {
+                "href": "me.html",
+                "title": "About me"
+            }
         },
-        "overlayButton": {
-            "href": "me.html",
-            "title": "About me"
-        },
-        "cardAboutMe": {
-            "title": "Titel",
-            "description": "Description"
+        "gallery": {
+            "heading": "My Gallery",
+            "subheading": "Pics from my vacations",
+            "description": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+            "image": {
+                "src": "media/placeholder.webp",
+                "title": "Nick Henning | Official Website"
+            },
+            "button": {
+                "href": "gallery.html",
+                "title": "My gallery"
+            }
         }
     },
-    "me": {
-        
-    },
-    "projects": {
-        
-    },
-    "music": {
-
-    },
-    "gallery": {
-        "overlayHeading": "My Gallery",
-        "overlaySubheading": "Ut wisi enim ad minim veniam",
-        "overlayDescription": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
-        "overlayImage": {
-            "src": "media/placeholder.webp",
-            "title": "Nick Henning | Official Website"
+    "card": {
+        "aboutMe": {
+            "title": "Titel",
+            "description": "Description"
         }
     }
 }
