@@ -16,8 +16,8 @@
     },
     "card": {
         "aboutMe": {
-            "title": "Titel",
-            "description": "Description",
+            "title": "Fetch Test",
+            "description": "Card AboutMe",
             "button": {
                 "href": "me.html",
                 "title": "About me"
