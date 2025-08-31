@@ -1,6 +1,5 @@
 /*
 Include CSS
-Note: Imports all the CSS Files
 -------------------------------------------
 */
 
@@ -17,3 +16,6 @@ Note: Imports all the CSS Files
 @import url(components/buttons.css);
 @import url(components/overlays.css);
 @import url(components/images.css);
+
+/* External CSS */
+@import url(../lib/slick/slick.css);
