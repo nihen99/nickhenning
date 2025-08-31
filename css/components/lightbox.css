@@ -39,8 +39,7 @@ Lightbox
     line-height: 1;
 }
 
-.c-lightbox__arrow:active,
-.c-lightbox__arrow:focus-visible {
+.c-lightbox__arrow:active {
     background-color: var(--color-primary);
     color: var(--color-component--black);
 }
@@ -60,6 +59,8 @@ Lightbox
     position: fixed;
     top: var(--space--xl);
     right: var(--space--xl);
+        border: none;
+        background-color: transparent;
     font-size: var(--font-size--xl);
     font-weight: 700;
     color: var(--color-primary);
