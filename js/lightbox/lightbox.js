@@ -7,7 +7,6 @@ $(document).ready(function () {
         const imgSrc = $galleryItems.eq(index).attr('src');
         $('.c-lightbox__img').attr('src', imgSrc);
         $('.c-lightbox').fadeIn().css("display", "flex");
-        $('.c-lightbox__close').focus();
     }
 
     $galleryItems.on('click', function () {
