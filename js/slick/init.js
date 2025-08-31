@@ -23,6 +23,8 @@ $(document).ready(function () {
             {
                 breakpoint: 600,
                 settings: {
+                    adaptiveHeight: true,
+
                     slidesToShow: 2,
                     slidesToScroll: 1,
                 }
@@ -30,6 +32,8 @@ $(document).ready(function () {
             {
                 breakpoint: 1000,
                 settings: {
+                    adaptiveHeight: true,
+
                     slidesToShow: 2,
                     slidesToScroll: 1,
                 }
