@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('.js-slick-multiple').slick({
         infinite: false,
-        arrows: false,
+        arrows: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         prevArrow: '<button type="button" class="slick-prev c-btn">Previous</button>',
@@ -11,7 +11,6 @@ $(document).ready(function () {
             {
                 breakpoint: 600,
                 settings: {
-                    arrows: false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                 }
@@ -19,7 +18,6 @@ $(document).ready(function () {
             {
                 breakpoint: 1000,
                 settings: {
-                    arrows: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,
                 }
