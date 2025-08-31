@@ -1,0 +1,28 @@
+{
+    "general": {
+        "siteTitle": "Nick Henning – Musiker & Entwickler",
+        "footerText": "© 2025 Nick Henning"
+    },
+    "homepage": {
+        "heroHeadline": "Willkommen auf meiner offiziellen Website",
+        "heroSubtext": "Musik, Code und kreative Energie"
+    },
+    "me": {
+        "bio": "Ich bin Musiker, Gitarrist und Webentwickler aus Deutschland.",
+        "portrait": "media/images/portrait.jpg"
+    },
+    "developement": {
+        "skills": "HTML, CSS, JavaScript, React, Node.js"
+    },
+    "music": {
+        "spotifyLink": "https://open.spotify.com/artist/xyz",
+        "latestTrack": "media/music/track.mp3"
+    },
+    "photography": {
+        "galleryIntro": "Einblicke in meine visuelle Welt",
+        "images": [
+            "media/photos/photo1.jpg",
+            "media/photos/photo2.jpg"
+        ]
+    }
+}
