@@ -11,7 +11,7 @@ Slider
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: var(--space) 0;
+    margin: var(--space--lg) 0;
 }
 
 .c-slider__arrows {
@@ -50,7 +50,7 @@ Slider
     padding: 0;
 
     display: flex;
-    column-gap: var(--space--xs);
+    column-gap: var(--space--sm);
     justify-content: space-between;
     align-items: center;
 
@@ -76,7 +76,7 @@ Slider
         height: var(--space--sm);
         padding: var(--space--sm);
         border: none;
-        border-radius: 2px;
+        border-radius: 4px;
         background-color: var(--color-component--gray);
         color: var(--color-component--black);
     }
