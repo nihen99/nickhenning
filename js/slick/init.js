@@ -5,6 +5,7 @@ $(document).ready(function () {
         autoplay: false,
         vertical: false,
         verticalSwiping: false,
+        adaptiveHeight: true,
 
         // Nav
         arrows: true,
