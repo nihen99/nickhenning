@@ -12,6 +12,8 @@ Loading
     height: 100%;
     background-color: var(--color-component--white);
     backdrop-filter: saturate(180%) blur(10px);
+    animation: loading forwards 1500ms ease-in-out;
+    animation-delay: 500ms;
 }
 
 @keyframes loading {
@@ -26,12 +28,4 @@ Loading
         display: none;
         pointer-events: none;
     }
-}
-
-.c-loading--in {
-    animation: loading forwards 2000ms ease-in-out;
-}
-
-.c-loading--out {
-    animation: loading reverse 2000ms ease-in-out;
 }
