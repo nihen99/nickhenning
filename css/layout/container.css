@@ -30,3 +30,16 @@ Container
     margin: var(--space--xxl) auto;
     padding: 0 var(--space--xxl);
 }
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    .container {
+        >p {
+            max-width: 80%;
+        }
+    }
+}
+
+@media (min-width: 1000px) {}
+
+@media (min-width: 1440px) {}

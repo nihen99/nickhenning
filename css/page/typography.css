@@ -55,7 +55,6 @@ Paragraphs
 -------------------------------------------
 */
 .c-text {
-    max-width: 80%;
     color: var(--color-text);
     font-size: var(--font-size);
     line-height: 1.66;
