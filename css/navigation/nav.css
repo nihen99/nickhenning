@@ -36,7 +36,13 @@ Nav
 
 .c-nav__list__item:active,
 .c-nav__list__item:focus-visible {
-    color: var(--color-primary);
+    
+}
+
+.c-nav__list__icon {
+    padding: var(--space--xs) var(--space--sm);
+    background-color: var(--color-primary--33);
+    border-bottom: var(--space--xxl);
 }
 
 .c-nav__list__item-title {
