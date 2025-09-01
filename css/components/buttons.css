@@ -8,8 +8,6 @@ Buttons
     display: block;
     width: fit-content;
     background-color: var(--color-component--black);
-    outline: 4px solid transparent;
-    outline-offset: -4px;
     border: none;
     border-radius: var(--space--xs);
     padding: var(--space--sm) var(--space);
@@ -20,21 +18,10 @@ Buttons
     transition: var(--transition);
 }
 
-.c-btn:hover,
-.c-btn:active {
-    outline: 4px solid var(--color-component--black);
-    outline-offset: -1px;
-}
-
 /* Inverted */
 .c-btn--inverted {
     background-color: var(--color-component--white);
     color: var(--color-text);
-}
-
-.c-btn--inverted:hover,
-.c-btn--inverted:active {
-    outline: 4px solid var(--color-component--white);
 }
 
 /* Primary */
@@ -43,20 +30,10 @@ Buttons
     color: var(--color-text);
 }
 
-.c-btn--primary:hover,
-.c-btn--primary:active {
-    outline: 4px solid var(--color-primary);
-}
-
 /* Secondary */
 .c-btn--secondary {
     background-color: var(--color-secondary);
     color: var(--color-text);
-}
-
-.c-btn--secondary:hover,
-.c-btn--secondary:active {
-    outline: 4px solid var(--color-secondary);
 }
 
 /* Tertiary */
@@ -65,18 +42,8 @@ Buttons
     color: var(--color-text);
 }
 
-.c-btn--tertiary:hover,
-.c-btn--tertiary:active {
-    outline: 4px solid var(--color-tertiary);
-}
-
 /* Quarternary */
 .c-btn--quarternary {
     background-color: var(--color-quarternary);
     color: var(--color-text);
-}
-
-.c-btn--quarternary:hover,
-.c-btn--quarternary:active {
-    outline: 4px solid var(--color-quarternary);
 }
