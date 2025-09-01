@@ -9,7 +9,7 @@ Buttons
     width: fit-content;
     background-color: var(--color-component--black);
     outline: 3px solid transparent;
-    outline-offset: -1px;
+    outline-offset: -3px;
     border: none;
     border-radius: var(--space--xs);
     padding: var(--space--sm) var(--space);
@@ -23,6 +23,7 @@ Buttons
 .c-btn:hover,
 .c-btn:active {
     outline: 3px solid var(--color-component--black);
+    outline-offset: -1px;
 }
 
 /* Inverted */
