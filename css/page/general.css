@@ -30,18 +30,6 @@ Page CSS
     --color-primary--66: rgba(18, 231, 107, var(--p66));
     --color-primary--33: rgba(18, 231, 107, var(--p33));
 
-    --color-secondary: rgb(226, 66, 202);
-    --color-secondary--66: rgba(231, 18, 199, var(--p66));
-    --color-secondary--33: rgba(231, 18, 199, var(--p33));
-
-    --color-tertiary: rgb(18, 185, 231);
-    --color-tertiary--66: rgba(18, 185, 231, var(--p66));
-    --color-tertiary--33: rgba(18, 185, 231, var(--p33));
-
-    --color-quarternary: rgb(243, 228, 74);
-    --color-quarternary--66: rgba(243, 228, 74, var(--p66));
-    --color-quarternary--33: rgba(243, 228, 74, var(--p33));
-
     --font-size: 14px;
     --font-size--sm: 10px;
     --font-size--lg: 18px;
@@ -74,7 +62,7 @@ body {
 }
 
 :focus-visible {
-    outline: 2px solid var(--color-primary);
+    outline: 2px solid var(--color-primary--66);
 }
 
 img {

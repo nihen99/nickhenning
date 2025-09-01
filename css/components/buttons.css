@@ -29,21 +29,3 @@ Buttons
     background-color: var(--color-primary);
     color: var(--color-text);
 }
-
-/* Secondary */
-.c-btn--secondary {
-    background-color: var(--color-secondary);
-    color: var(--color-text);
-}
-
-/* Tertiary */
-.c-btn--tertiary {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
-}
-
-/* Quarternary */
-.c-btn--quarternary {
-    background-color: var(--color-quarternary);
-    color: var(--color-text);
-}
