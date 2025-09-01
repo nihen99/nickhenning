@@ -21,18 +21,19 @@ Cards
     border: none;
 
     .c-card__image {
-        aspect-ratio: 3 / 4 !important;
+        object-fit: cover;
+        aspect-ratio: 4 / 3 !important;
     }
 
     .c-card__content {
         position: absolute;
         bottom: 0;
         left: 0;
-        background-color: var(--color-component--black);
-        backdrop-filter: opacity(0.9);
-        color: var(--color-component--white);
+        background-color: rgba(0, 0, 0, 0.9);
 
+        h3,
         p {
+            color: var(--color-component--white);
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
