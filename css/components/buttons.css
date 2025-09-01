@@ -8,7 +8,7 @@ Buttons
     display: block;
     width: fit-content;
     background-color: var(--color-component--black);
-    outline: 0 solid transparent;
+    outline: 3px solid transparent;
     outline-offset: -1px;
     border: none;
     border-radius: var(--space--xs);
