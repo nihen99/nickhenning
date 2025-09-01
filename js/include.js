@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $('a').on('click', function (e) {
     e.preventDefault();
+    $('.c-loading').removeClass('c-loading--in');
     $('.c-loading').addClass('c-loading--out');
 
     // Nach kurzer Verzögerung zur Zielseite navigieren

@@ -30,10 +30,8 @@ Loading
 
 .c-loading--in {
     animation: loading forwards 2000ms ease-in-out;
-    animation-delay: 500ms;
 }
 
 .c-loading--out {
     animation: loading reverse 2000ms ease-in-out;
-    animation-delay: 500ms;
 }
