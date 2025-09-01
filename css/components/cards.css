@@ -29,7 +29,7 @@ Cards
         position: absolute;
         bottom: 0;
         left: 0;
-        background: (to top, var(--color-component--black--66) 33%, transparent 80%);
+        background: linear-gradient(to top, var(--color-component--black--66) 33%, transparent 80%);
 
         h3,
         p {
