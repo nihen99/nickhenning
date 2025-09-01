@@ -76,11 +76,12 @@ Lightbox
 
 .c-lightbox__hint {
     position: absolute;
-    bottom: var(--space--xl);
+    bottom: var(--space--lg);
     width: 100%;
     height: fit-content;
+    font-size: var(--font-size--sm);
     text-align: center;
-    color: var(--color-component--white);
+    color: var(--color-component--lightgray);
 }
 
 /* Responsive Styles */
