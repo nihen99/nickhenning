@@ -17,6 +17,11 @@ Buttons
     line-height: 1;
 }
 
+.c-btn::after {
+    content: '\27DF';
+    margin-left: var(--space--xs);
+}
+
 .c-btn--inverted {
     background-color: var(--color-component--white);
     color: var(--color-text);
@@ -25,5 +30,4 @@ Buttons
 .c-btn:active {
     background-color: var(--color-primary);
     color: var(--color-component--black);
-    font-weight: 300;
 }
