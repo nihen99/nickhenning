@@ -81,7 +81,7 @@ Lightbox
     height: fit-content;
     font-size: var(--font-size--sm);
     text-align: center;
-    color: var(--color-component--lightgray);
+    color: var(--color-component--darkgray);
 }
 
 /* Responsive Styles */
