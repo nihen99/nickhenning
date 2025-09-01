@@ -17,6 +17,15 @@
 </head>
 
 <body>
+    <!--Nav-->
+    <div id="pNav"></div>
+    <script>
+        fetch('partials/nav.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('pNav').innerHTML = html;
+            });
+    </script>
     <!--Overlay-->
     <div class="container--full c-overlay">
         <img id="overlay-gallery-image" class="c-image c-image--21x9 c-overlay__image" />
