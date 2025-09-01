@@ -33,8 +33,8 @@
                 "src": "media/placeholder.webp",
                 "title":"About me"
             },
-            "title": "Fetch Test",
-            "description": "Card AboutMe",
+            "title": "About me",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod temporinvidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
             "button": {
                 "href": "me.html",
                 "title": "About me"
