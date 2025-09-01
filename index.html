@@ -24,6 +24,15 @@
             .then(res => res.text())
             .then(html => {
                 document.getElementById('pNav').innerHTML = html;
+
+                const currentPage = window.location.pathname.split('/').pop();
+
+                document.querySelectorAll('.c-nav__list__item').forEach(link => {
+                    const href = link.getAttribute('href');
+                    if (href === currentPage) {
+                        link.classList.add('c-nav__list__item--current');
+                    }
+                });
             });
     </script>
 
@@ -38,7 +47,8 @@
             </svg>
             <p>Website work in progress</span>
         </div>
-        <span>Disclaimer: All stock images are temporarily implemented for demonstration purposes. All rights remain with their respective owners.</span>
+        <span>Disclaimer: All stock images are temporarily implemented for demonstration purposes. All rights remain
+            with their respective owners.</span>
     </div>
 
     <!--Overlay-->
