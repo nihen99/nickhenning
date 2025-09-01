@@ -17,23 +17,26 @@ Messages
     transition: var(--transition);
     animation: messages 2000ms infinite ease;
 
-    @keyframes messages {
-        0% {
-            color: var(--color-primary--66);
-        }
-        33% {
-            color: var(--color-primary);
-        }
-        66% {
-            color: var(--color-primary);
-        }
-        100% {
-            color: var(--color-primary--66);
-        }
-    }
-
     p {
         color: var(--color-component--darkgray);
         font-size: var(--font-size);
+    }
+}
+
+@keyframes messages {
+    0% {
+        color: var(--color-primary--66);
+    }
+
+    33% {
+        color: var(--color-primary);
+    }
+
+    66% {
+        color: var(--color-primary);
+    }
+
+    100% {
+        color: var(--color-primary--66);
     }
 }
