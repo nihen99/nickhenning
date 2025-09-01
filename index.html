@@ -127,10 +127,17 @@
     <!--Cards-->
     <div class="container">
         <div class="c-grid c-grid--66">
-            <div class="c-card js-cookie-consent-container">
-                <p>Um Spotify-Inhalte zu laden, benötigen wir deine Zustimmung.</p>
-                <button class="c-btn--primary js-cookie-consent-accept">Akzeptieren</button>
-                <button class="c-btn js-cookie-consent-decline">Ablehnen</button>
+            <div class="c-card">
+                <div class="c-cookie-consent js-cookie-consent-container">
+                    <svg width="16" height="16" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288" />
+                    </svg>
+                    <h3 class="c-heading c-heading--h3">Spotify Einbindung</h3>
+                    <p class="c-text">Um Spotify-Inhalte zu laden, benötigen wir deine Zustimmung.</p>
+                    <button type="button" class="c-btn--primary js-cookie-consent-accept">Akzeptieren</button>
+                    <button type="button" class="c-btn js-cookie-consent-decline">Ablehnen</button>
+                </div>
             </div>
             <div class="c-card">
                 <div class="c-card__content">
@@ -151,17 +158,19 @@
     </div>
 
     <div class="container">
-        <button class="js-open-consent-modal">Datenschutz-Einstellungen</button>
+        <button class="c-btn js-open-consent-modal">Datenschutz-Einstellungen</button>
     </div>
 
 
-    <div class="c-consent-modal" style="display:none;">
-        <div class="c-consent-modal__content">
-            <h2>Datenschutz-Einstellungen</h2>
-            <p>Hier kannst du deine Einwilligung zur Einbindung externer Inhalte wie Spotify ändern.</p>
-            <button class="js-consent-accept">Spotify erlauben</button>
-            <button class="js-consent-decline">Spotify blockieren</button>
-            <button class="js-consent-close">Schließen</button>
+    <div class="c-modal js-cookie-consent-modal" style="display:none;">
+        <div class="c-modal__content">
+            <h2 class="c-heading c-heading--h2">Datenschutz-Einstellungen</h2>
+            <p class="c-text">Hier kannst du deine Einwilligung zur Einbindung externer Inhalte wie Spotify ändern.</p>
+            <div class="c-btnbar">
+                <button type="button" class="c-btn c-btn--primary js-consent-accept">Einbindung erlauben</button>
+                <button type="button" class="c-btn c-btn--inverted js-consent-decline">Einbindung blockieren</button>
+                <button type="button" class="c-btn c-btn--inverted js-consent-close">Schließen</button>
+            </div>
         </div>
     </div>
     <!--Loading-->

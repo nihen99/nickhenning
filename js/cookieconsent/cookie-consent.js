@@ -39,11 +39,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Modal logic
     document.querySelector('.js-open-consent-modal').addEventListener('click', () => {
-      document.querySelector('.c-consent-modal').style.display = 'flex';
+      document.querySelector('.js-cookie-consent-modal').style.display = 'flex';
     });
 
     document.querySelector('.js-consent-close').addEventListener('click', () => {
-      document.querySelector('.c-consent-modal').style.display = 'none';
+      document.querySelector('.js-cookie-consent-modal').style.display = 'none';
     });
 
     document.querySelector('.js-consent-accept').addEventListener('click', () => {

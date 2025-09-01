@@ -1,0 +1,11 @@
+/*
+Cookie Consent
+-------------------------------------------
+*/
+
+.c-cookie-consent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
