@@ -5,7 +5,7 @@ Messages
 
 .c-message {
     z-index: 8;
-    opacity: 0.5;
+    opacity: 0.66;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -14,6 +14,7 @@ Messages
     justify-content: center;
     align-items: center;
     row-gap: var(--space--sm);
+    min-width: 80%;
     max-width: 80%;
     height: fit-content;
     padding: var(--space) var(--space--xl);
@@ -44,6 +45,7 @@ Messages
 /* Responsive Styles */
 @media (min-width: 600px) {
     .c-message {
+        min-width: 33%;
         max-width: 33%;
     }
 }
