@@ -1,10 +1,12 @@
 $(document).ready(function () {
-    const currentPath = window.location.pathname.split('/').pop();
+  const currentPage = window.location.href;
 
-    $('.c-nav__list__item').each(function () {
-        const linkPath = $(this).attr('href');
-        if (linkPath === currentPath) {
-            $(this).addClass('c-nav__list__item--current');
-        }
-    });
+  $('.c-nav__list__item').each(function () {
+    const linkHref = $(this).attr('href');
+    const absoluteHref = new URL(linkHref, window.location.origin).href;
+
+    if (currentPage === absoluteHref) {
+      $(this).addClass('c-nav__list__item--current');
+    }
+  });
 });
