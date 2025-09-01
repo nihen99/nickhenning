@@ -30,7 +30,6 @@ Cards
         bottom: 0;
         left: 0;
         background: linear-gradient(to top, var(--color-component--black--66) 33%, transparent 80%);
-        text-shadow: 1px 1px 3px var(--color-component--black);
 
         h3,
         p {
@@ -39,6 +38,7 @@ Cards
             -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;
             overflow: hidden;
+            text-shadow: 1px 1px 3px var(--color-component--black);
         }
     }
 }
