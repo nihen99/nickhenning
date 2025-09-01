@@ -14,7 +14,7 @@ Messages
     justify-content: center;
     align-items: center;
     row-gap: var(--space--sm);
-    width: 80%;
+    max-width: 80%;
     height: fit-content;
     padding: var(--space) var(--space--xl);
     outline: 1px solid var(--color-component--gray);
@@ -29,6 +29,7 @@ Messages
 
     span {
         font-size: var(--font-size--sm);
+        text-align: center;
     }
 }
 
@@ -43,7 +44,7 @@ Messages
 /* Responsive Styles */
 @media (min-width: 600px) {
     .c-message {
-        width: fit-content;
+        max-width: 33%;
     }
 }
 
