@@ -31,7 +31,7 @@ Nav
     align-items: center;
     row-gap: 4px;
     justify-content: center;
-    color: var(--color-text);
+    color: var(--color-component--darkgray);
 }
 
 .c-nav__list__item:active,
@@ -42,6 +42,7 @@ Nav
         background-color: var(--color-primary--33);
     }
     .c-nav__list__item-title {
+        color: var(--color-component--black);
         font-weight: 500;
     }
 }
