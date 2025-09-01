@@ -18,7 +18,7 @@ Buttons
 }
 
 .c-btn::after {
-    content: '\27DF';
+    content: '\2192';
     margin-left: var(--space--xs);
 }
 
