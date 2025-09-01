@@ -33,10 +33,6 @@ Slider
     padding: 0 var(--space) 0 0;
 }
 
-.slick-slide:last-of-type {
-    padding: 0;
-}
-
 .slick-arrows {
     .slick-prev,
     .slick-next {
