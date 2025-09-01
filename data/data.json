@@ -51,6 +51,30 @@
                 "href": "music.html",
                 "title": "Listen to my music"
             }
+        },
+        "gallery": {
+            "image": {
+                "src": "media/placeholder_02.webp",
+                "title":"My Gallery"
+            },
+            "title": "My Gallery",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod temporinvidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+            "button": {
+                "href": "gallery.html",
+                "title": "Visit my gallery"
+            }
+        },
+        "projects": {
+            "image": {
+                "src": "media/placeholder_04.webp",
+                "title":"My Projects"
+            },
+            "title": "My Projects",
+            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod temporinvidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+            "button": {
+                "href": "projects.html",
+                "title": "See my projects"
+            }
         }
     }
 }
