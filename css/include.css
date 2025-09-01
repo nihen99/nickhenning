@@ -3,6 +3,7 @@ Include CSS
 -------------------------------------------
 */
 
+@import url(page/footer.css);
 @import url(page/general.css);
 @import url(page/typography.css);
 
