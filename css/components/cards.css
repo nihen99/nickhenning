@@ -4,6 +4,7 @@ Cards
 */
 
 .c-card {
+    overflow: hidden;
     border: 1px solid var(--color-component--gray);
     border-radius: var(--space--sm);
     background-color: var(--color-component--lightgray);
@@ -13,4 +14,26 @@ Cards
 
 .c-card__content {
     padding: var(--space--lg);
+}
+
+.c-card--overlay {
+    position: relative;
+    border: none;
+
+    .c-card__image {
+        aspect-ratio: 3 / 4 !important;
+    }
+
+    .c-card__content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        p {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    }
 }
