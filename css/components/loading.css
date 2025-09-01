@@ -10,16 +10,18 @@ Loading
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 90%);
+    background-color: var(--color-component--white);
     backdrop-filter: saturate(180%) blur(10px);
 }
 
 @keyframes loading {
     from {
+        background-color: var(--color-component--white);
         opacity: 1;
 
     }
     to {
+        background-color: var(--color-component--white--66);
         opacity: 0;
         display: none;
         pointer-events: none;
@@ -27,11 +29,11 @@ Loading
 }
 
 .c-loading--in {
-    animation: loading forwards 2000ms ease-out;
+    animation: loading forwards 2000ms ease-in-out;
     animation-delay: 500ms;
 }
 
 .c-loading--out {
-    animation: loading reverse 2000ms ease-out;
+    animation: loading reverse 2000ms ease-in-out;
     animation-delay: 500ms;
 }

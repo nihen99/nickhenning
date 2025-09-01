@@ -7,6 +7,6 @@ $(document).ready(function () {
     const link = $(this).attr('href');
     setTimeout(() => {
         window.location.href = link;
-    }, 500); // Dauer der Animation
+    }, 1000); // Dauer der Animation
     });
 });
