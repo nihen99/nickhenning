@@ -22,7 +22,7 @@ Cards
 
     .c-card__image {
         object-fit: cover;
-        aspect-ratio: 4 / 3 !important;
+        aspect-ratio: 3 / 4 !important;
     }
 
     .c-card__content {
@@ -41,3 +41,14 @@ Cards
         }
     }
 }
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    .c-card__image {
+        aspect-ratio: 4 / 3 !important;
+    }
+}
+
+@media (min-width: 1000px) {}
+
+@media (min-width: 1440px) {}
