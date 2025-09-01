@@ -35,6 +35,7 @@ Nav
 }
 
 .c-nav__list__item:active,
+.c-nav__list__item:focus,
 .c-nav__list__item:focus-visible,
 .c-nav__list__item--current {
     .c-nav__list__icon {
