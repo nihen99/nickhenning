@@ -12,7 +12,7 @@ Buttons
     border-radius: var(--space--xs);
     padding: var(--space--sm) var(--space);
     font-size: var(--font-size);
-    font-weight: 300;
+    font-weight: 400;
     color: var(--color-component--white);
     line-height: 1;
 }
@@ -25,4 +25,5 @@ Buttons
 .c-btn:active {
     background-color: var(--color-primary);
     color: var(--color-component--black);
+    font-weight: 300;
 }
