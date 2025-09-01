@@ -8,19 +8,28 @@ Page CSS
     --container--sm: 800px;
     --container--lg: 1200px;
 
-    --color-component--white: #ffffff;
-    --color-component--lightgray: #f9f9f9;
-    --color-component--gray: #f3f3f3;
-    --color-component--darkgray: #606067;
-    --color-component--black: #202025;
+    --p100: 1.0;
+    --p66: 0.66;
+    --p50: 0.5;
+    --p33: 0.33;
+
+    --color-component--white: rgb(255, 255, 255);
+    --color-component--lightgray: rgb(249, 249, 249);
+    --color-component--gray: rgb(243, 243, 243);
+    --color-component--darkgray: rgb(96, 96, 103);
+    --color-component--black: rgb(32, 32, 37);
+
+    --color-component--black--66: rgba(32, 32, 37, var(--p66));
+    --color-component--black--50: rgba(32, 32, 37, var(--p50));
+    --color-component--black--33: rgba(32, 32, 37, var(--p33));
 
     --color-text: var(--color-component--black);
     --color-text--inverted: var(--color-component--white);
 
     --color-primary: rgb(18, 231, 107);
-    --color-primary--66: rgba(18, 231, 107, 66%);
-    --color-primary--50: rgba(18, 231, 107, 50%);
-    --color-primary--33: rgba(18, 231, 107, 33%);
+    --color-primary--66: rgba(18, 231, 107, var(--p66));
+    --color-primary--50: rgba(18, 231, 107, var(--p50));
+    --color-primary--33: rgba(18, 231, 107, var(--p33));
 
     --font-size: 14px;
     --font-size--sm: 10px;
