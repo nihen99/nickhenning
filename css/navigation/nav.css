@@ -22,7 +22,7 @@ Nav
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     align-items: baseline;
-    padding: var(--space) var(--space--xxl);
+    padding: var(--space) var(--space--lg);
 }
 
 .c-nav__list__item {
