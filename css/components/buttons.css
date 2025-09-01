@@ -8,6 +8,7 @@ Buttons
     display: block;
     width: fit-content;
     background-color: var(--color-component--black);
+    outline: 0 solid transparent;
     outline-offset: -1px;
     border: none;
     border-radius: var(--space--xs);
@@ -19,6 +20,7 @@ Buttons
     transition: var(--transition);
 }
 
+.c-btn:hover,
 .c-btn:active {
     outline: 3px solid var(--color-component--black);
 }
@@ -29,6 +31,7 @@ Buttons
     color: var(--color-text);
 }
 
+.c-btn--inverted:hover,
 .c-btn--inverted:active {
     outline: 2px solid var(--color-component--white);
 }
@@ -39,6 +42,7 @@ Buttons
     color: var(--color-text);
 }
 
+.c-btn--primary:hover,
 .c-btn--primary:active {
     outline: 3px solid var(--color-primary);
 }
@@ -49,6 +53,7 @@ Buttons
     color: var(--color-text);
 }
 
+.c-btn--secondary:hover,
 .c-btn--secondary:active {
     outline: 3px solid var(--color-secondary);
 }
@@ -59,6 +64,7 @@ Buttons
     color: var(--color-text);
 }
 
+.c-btn--tertiary:hover,
 .c-btn--tertiary:active {
     outline: 3px solid var(--color-tertiary);
 }
@@ -69,6 +75,7 @@ Buttons
     color: var(--color-text);
 }
 
+.c-btn--quarternary:hover,
 .c-btn--quarternary:active {
     outline: 3px solid var(--color-quarternary);
 }
