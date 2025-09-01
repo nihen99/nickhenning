@@ -17,12 +17,56 @@ Buttons
     line-height: 1;
 }
 
+.c-btn:active {
+    outline: 2px solid var(--color-component--black--33);
+}
+
+/* Inverted */
 .c-btn--inverted {
     background-color: var(--color-component--white);
     color: var(--color-text);
 }
 
-.c-btn:active {
+.c-btn--inverted:active {
+    outline: 2px solid var(--color-component--white--33);
+}
+
+/* Primary */
+.c-btn--primary {
     background-color: var(--color-primary);
-    color: var(--color-component--black);
+    color: var(--color-text);
+}
+
+.c-btn--primary:active {
+    outline: 2px solid var(--color-primary--33);
+}
+
+/* Secondary */
+.c-btn--secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+}
+
+.c-btn--secondary:active {
+    outline: 2px solid var(--color-secondary--33);
+}
+
+/* Tertiary */
+.c-btn--tertiary {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+}
+
+.c-btn--tertiary:active {
+    outline: 2px solid var(--color-tertiary--33);
+}
+
+/* Quarternary */
+.c-btn--quarternary {
+    background-color: var(--color-quarternary);
+    color: var(--color-text);
+}
+
+.c-btn--quarternary:active {
+    outline: 2px solid var(--color-quarternary--33);
 }

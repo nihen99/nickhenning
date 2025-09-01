@@ -8,19 +8,19 @@ Page CSS
     --container--sm: 800px;
     --container--lg: 1200px;
 
-    --p100: 1.0;
     --p66: 0.66;
-    --p50: 0.5;
     --p33: 0.33;
 
     --color-component--white: rgb(255, 255, 255);
+    --color-component--white--66: rgba(255, 255, 255, var(--p66));
+    --color-component--white--33: rgba(255, 255, 255, var(--p33));
+
     --color-component--lightgray: rgb(249, 249, 249);
     --color-component--gray: rgb(243, 243, 243);
     --color-component--darkgray: rgb(96, 96, 103);
-    --color-component--black: rgb(32, 32, 37);
 
+    --color-component--black: rgb(32, 32, 37);
     --color-component--black--66: rgba(32, 32, 37, var(--p66));
-    --color-component--black--50: rgba(32, 32, 37, var(--p50));
     --color-component--black--33: rgba(32, 32, 37, var(--p33));
 
     --color-text: var(--color-component--black);
@@ -28,8 +28,19 @@ Page CSS
 
     --color-primary: rgb(18, 231, 107);
     --color-primary--66: rgba(18, 231, 107, var(--p66));
-    --color-primary--50: rgba(18, 231, 107, var(--p50));
     --color-primary--33: rgba(18, 231, 107, var(--p33));
+
+    --color-secondary: rgb(231, 18, 199);
+    --color-secondary--66: rgba(231, 18, 199, var(--p66));
+    --color-secondary--33: rgba(231, 18, 199, var(--p33));
+
+    --color-tertiary: rgb(18, 185, 231);
+    --color-tertiary--66: rgba(18, 185, 231, var(--p66));
+    --color-tertiary--33: rgba(18, 185, 231, var(--p33));
+
+    --color-quarternary: rgb(243, 228, 74);
+    --color-quarternary--66: rgba(243, 228, 74, var(--p66));
+    --color-quarternary--33: rgba(243, 228, 74, var(--p33));
 
     --font-size: 14px;
     --font-size--sm: 10px;
