@@ -1,5 +1,4 @@
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const consentContainer = document.querySelector('.js-cookie-consent-container');
 
     const embedHTML = `
@@ -42,4 +41,3 @@
       });
     }
   });
-</script>
