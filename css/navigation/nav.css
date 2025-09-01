@@ -38,7 +38,8 @@ Nav
 .c-nav__list__item:focus-visible,
 .c-nav__list__item--current {
     .c-nav__list__icon {
-        background-color: var(--color-primary);
+        color: var(--color-primary);
+        background-color: var(--color-primary--33);
     }
 }
 
@@ -79,7 +80,7 @@ Nav
     .c-nav__list {
         grid-template-columns: none;
         grid-row-gap: var(--space--lg);
-        padding: var(--space--xxl) var(--space);
+        padding: var(--space--xxl) var(--space--sm);
     }
 }
 
