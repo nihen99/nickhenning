@@ -4,6 +4,7 @@ Lightbox
 */
 
 .c-lightbox {
+    position: relative;
     overflow: hidden;
     display: none;
     position: fixed;
@@ -73,6 +74,15 @@ Lightbox
     color: var(--color-primary);
 }
 
+.c-lightbox__hint {
+    position: absolute;
+    bottom: var(--space--xl);
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    color: var(--color-component--white);
+}
+
 /* Responsive Styles */
 @media (min-width: 600px) {
     .c-lightbox {
@@ -103,6 +113,11 @@ Lightbox
 
     .c-lightbox__arrow--next svg {
         transform: none;
+    }
+
+    .c-lightbox__image {
+        max-width: 70%;
+        max-height: 70%;
     }
 }
 
