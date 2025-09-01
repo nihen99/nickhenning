@@ -45,7 +45,7 @@
                 "src": "media/placeholder_03.webp",
                 "title":"Listen to my music"
             },
-            "title": "About Me",
+            "title": "My Music",
             "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod temporinvidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
             "button": {
                 "href": "music.html",
