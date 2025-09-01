@@ -20,10 +20,9 @@ Nav
 .c-nav__list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: var(--space--lg);
     justify-content: center;
     align-items: baseline;
-    padding: var(--space);
+    padding: var(--space) var(--space--xxl);
 }
 
 .c-nav__list__item {
