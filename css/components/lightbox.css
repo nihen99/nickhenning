@@ -37,6 +37,7 @@ Lightbox
 }
 
 .c-lightbox__arrow svg {
+    pointer-events: none;
     color: var(--color-component--black);
 }
 
