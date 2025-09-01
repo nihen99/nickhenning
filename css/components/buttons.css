@@ -8,6 +8,7 @@ Buttons
     display: block;
     width: fit-content;
     background-color: var(--color-component--black);
+    outline-offset: -1px;
     border: none;
     border-radius: var(--space--xs);
     padding: var(--space--sm) var(--space);
@@ -18,7 +19,7 @@ Buttons
 }
 
 .c-btn:active {
-    outline: 2px solid var(--color-component--black--33);
+    outline: 3px solid var(--color-component--black);
 }
 
 /* Inverted */
@@ -28,7 +29,7 @@ Buttons
 }
 
 .c-btn--inverted:active {
-    outline: 2px solid var(--color-component--white--33);
+    outline: 2px solid var(--color-component--white);
 }
 
 /* Primary */
@@ -38,7 +39,7 @@ Buttons
 }
 
 .c-btn--primary:active {
-    outline: 2px solid var(--color-primary--33);
+    outline: 3px solid var(--color-primary);
 }
 
 /* Secondary */
@@ -48,7 +49,7 @@ Buttons
 }
 
 .c-btn--secondary:active {
-    outline: 2px solid var(--color-secondary--33);
+    outline: 3px solid var(--color-secondary);
 }
 
 /* Tertiary */
@@ -58,7 +59,7 @@ Buttons
 }
 
 .c-btn--tertiary:active {
-    outline: 2px solid var(--color-tertiary--33);
+    outline: 3px solid var(--color-tertiary);
 }
 
 /* Quarternary */
@@ -68,5 +69,5 @@ Buttons
 }
 
 .c-btn--quarternary:active {
-    outline: 2px solid var(--color-quarternary--33);
+    outline: 3px solid var(--color-quarternary);
 }
