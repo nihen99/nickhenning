@@ -4,39 +4,26 @@ Messages
 */
 
 .c-message {
+    z-index: 8;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    column-gap: var(--space--xs);
-    width: 100%;
+    column-gap: var(--space--sm);
+    width: fit-content;
     height: fit-content;
-    padding: var(--space--sm) var(--space--xl);
-    border-bottom: 1px solid var(--color-component--darkgray);
-    background-color: var(--color-component--black);
-    color: var(--color-primary--66);
-    transition: var(--transition);
-    animation: messages 2000ms infinite ease;
+    padding: var(--space) var(--space--xl);
+    outline: 1px solid var(--color-component--gray);
+    border-bottom-left-radius: var(--space--xl);
+    border-bottom-right-radius: var(--space--xl);
+    background-color: var(--color-component--lightgray);
+    color: var(--color-component--black);
+    mix-blend-mode: difference;
+    backdrop-filter: blur(4px) saturate(180%);
 
     p {
-        color: var(--color-component--darkgray);
         font-size: var(--font-size);
-    }
-}
-
-@keyframes messages {
-    0% {
-        color: var(--color-primary--66);
-    }
-
-    33% {
-        color: var(--color-primary);
-    }
-
-    66% {
-        color: var(--color-primary);
-    }
-
-    100% {
-        color: var(--color-primary--66);
     }
 }
