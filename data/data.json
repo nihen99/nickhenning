@@ -29,6 +29,10 @@
     },
     "card": {
         "aboutMe": {
+            "image": {
+                "src": "media/placeholder.webp",
+                "title":"About me"
+            },
             "title": "Fetch Test",
             "description": "Card AboutMe",
             "button": {

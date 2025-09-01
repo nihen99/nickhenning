@@ -9,6 +9,8 @@ Cards
     background-color: var(--color-component--lightgray);
 }
 
+.c-card__image {}
+
 .c-card__content {
     padding: var(--space--lg);
 }
