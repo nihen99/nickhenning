@@ -24,6 +24,17 @@
             .then(res => res.text())
             .then(html => {
                 document.getElementById('pNav').innerHTML = html;
+
+                setTimeout(() => {
+                    const currentPage = window.location.pathname.split('/').pop();
+
+                    document.querySelectorAll('.c-nav__list__item').forEach(link => {
+                        const href = link.getAttribute('href');
+                        if (href === currentPage) {
+                            link.classList.add('c-nav__list__item--current');
+                        }
+                    });
+                }, 0);
             });
     </script>
 
