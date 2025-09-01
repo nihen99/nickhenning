@@ -62,12 +62,12 @@ Lightbox
     line-height: 1;
 }
 
-.c-lightbox__arrow--prev::before {
-    content: '\2B06';
+.c-lightbox__arrow--prev span {
+    transform: rotate(90deg);
 }
 
-.c-lightbox__arrow--next::before {
-    content: '\2B07';
+.c-lightbox__arrow--next span {
+    transform: rotate(-90deg);
 }
 
 .c-lightbox__close {
@@ -89,7 +89,7 @@ Lightbox
     .c-lightbox {
         flex-direction: row;
     }
-    
+
     .c-lightbox__arrow {
         padding: var(--space);
     }
@@ -109,11 +109,11 @@ Lightbox
     }
 
     .c-lightbox__arrow--prev span {
-        transform: rotate(90deg);
+        transform: none;
     }
 
     .c-lightbox__arrow--next span {
-        transform: rotate(-90deg);
+        transform: none;
     }
 }
 
