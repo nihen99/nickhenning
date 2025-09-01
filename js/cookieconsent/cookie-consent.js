@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const consentContainer = document.querySelector('.js-cookie-consent-container');
     const embedHTML = `
-      <iframe title="Spotify Iframe of Artist Nick Henning" data-testid="embed-iframe" style="border-radius:12px"
+      <iframe title="Spotify iframe of Artist Nick Henning" data-testid="embed-iframe" style="height: 375px; min-height: 375px; max-height: 375px;"
         src="https://open.spotify.com/embed/artist/3NOae9Khh92LtyDsu8UFYL?utm_source=generator&theme=0"
-        width="100%" height="350" frameBorder="0" allowfullscreen=""
+        width="100%" height="375px" frameBorder="0" allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"></iframe>
     `;
