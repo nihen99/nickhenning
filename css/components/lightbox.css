@@ -108,12 +108,12 @@ Lightbox
         border-bottom-right-radius: var(--space--sm);
     }
 
-    .c-lightbox__arrow--prev::before {
-        content: '\276E';
+    .c-lightbox__arrow--prev span {
+        transform: rotate(90deg);
     }
 
-    .c-lightbox__arrow--next::before {
-        content: '\276F';
+    .c-lightbox__arrow--next span {
+        transform: rotate(-90deg);
     }
 }
 
