@@ -53,7 +53,7 @@ Nav
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: var(--space--xs) var(--space--xs);
+    padding: var(--space--xs) var(--space);
     background-color: transparent;
     border-radius: var(--space--xxl);
     transition: var(--transition);
