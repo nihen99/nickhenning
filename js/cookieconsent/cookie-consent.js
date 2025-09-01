@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const embedHTML = `
       <iframe title="Spotify Iframe of Artist Nick Henning" data-testid="embed-iframe" style="border-radius:12px"
         src="https://open.spotify.com/embed/artist/3NOae9Khh92LtyDsu8UFYL?utm_source=generator&theme=0"
-        width="100%" height="500" frameBorder="0" allowfullscreen=""
+        width="100%" height="350" frameBorder="0" allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"></iframe>
     `;
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       consentContainer.innerHTML = `
         <div class="c-cookie-consent__content">
             <h3 class="c-heading c-heading--h3">Einbindung blockiert</h3>
-            <p class="c-text">Du hast die Spotify Einbindung abgeleht, dadurch hast du das Tarcking von Spotify blockiert. Du möchtest die Einbindung aktivieren?</p>
+            <p class="c-text">Du hast die Spotify Einbindung abgeleht, dadurch hast du das Tracking von Spotify blockiert. Du möchtest die Einbindung aktivieren?</p>
             <button class="c-btn c-btn--primary js-cookie-consent-accept">Aktivieren</button>
         </div>
       `;
