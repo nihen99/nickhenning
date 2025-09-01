@@ -44,8 +44,10 @@ Cards
 
 /* Responsive Styles */
 @media (min-width: 600px) {
-    .c-card__image {
-        aspect-ratio: 4 / 3;
+    .c-card--overlay {
+        .c-card__image {
+            aspect-ratio: 4 / 3;
+        }
     }
 }
 
