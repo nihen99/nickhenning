@@ -22,7 +22,7 @@ Cards
 
     .c-card__image {
         object-fit: cover;
-        aspect-ratio: 3 / 4 !important;
+        aspect-ratio: 3 / 4;
     }
 
     .c-card__content {
@@ -35,7 +35,7 @@ Cards
         p {
             color: var(--color-component--white);
             display: -webkit-box;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -45,7 +45,7 @@ Cards
 /* Responsive Styles */
 @media (min-width: 600px) {
     .c-card__image {
-        aspect-ratio: 4 / 3 !important;
+        aspect-ratio: 4 / 3;
     }
 }
 
