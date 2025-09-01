@@ -39,12 +39,7 @@
     <div class="container">
         <div class="c-gallery">
             <div class="c-gallery__grid">
-                <img class="c-image js-lightbox-trigger" src="media/gallery/placeholder.webp"
-                    title="Nick Henning - Official Website" tabindex="0" />
-                <img class="c-image js-lightbox-trigger" src="media/gallery/placeholder_02.webp"
-                    title="Nick Henning - Official Website" tabindex="0" />
-                <img class="c-image js-lightbox-trigger" src="media/gallery/placeholder_03.webp"
-                    title="Nick Henning - Official Website" tabindex="0" />
+                
             </div>
             <div class="c-lightbox">
                 <button type="button" class="c-lightbox__close">&times;</button>
@@ -62,6 +57,24 @@
 
     <!--Scripts-->
     <script type="text/javascript" src="lib/jquery/jquery-3.7.1.min.js"></script>
+    <script>
+        fetch('media/gallery/gallery.json')
+            .then(res => res.json())
+            .then(images => {
+                const grid = document.querySelector('.c-gallery__grid');
+                images.forEach(filename => {
+                    const img = document.createElement('img');
+                    img.className = 'c-image js-lightbox-trigger';
+                    img.src = `media/gallery/${filename}`;
+                    img.title = 'Nick Henning - Gallery';
+                    img.tabIndex = 0;
+                    img.loading = 'lazy';
+                    grid.appendChild(img);
+                });
+            })
+            .catch(err => console.error('Fehler beim Laden der Galerie:', err));
+    </script>
+
     <script type="text/javascript" src="js/lightbox/lightbox.js"></script>
     <!--Data-->
     <script type="text/javascript" src="data/data.js"></script>
