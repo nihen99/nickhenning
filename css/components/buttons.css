@@ -17,11 +17,6 @@ Buttons
     line-height: 1;
 }
 
-.c-btn::after {
-    content: '\2192';
-    margin-left: var(--space--xs);
-}
-
 .c-btn--inverted {
     background-color: var(--color-component--white);
     color: var(--color-text);
