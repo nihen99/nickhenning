@@ -23,6 +23,16 @@ Overlay
     padding: 0 var(--space--xxl);
     bottom: 0;
     left: 0;
+
+    h1,
+    h2,
+    h3,
+    p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
 }
 
 /* Responsive Styles */
@@ -41,6 +51,16 @@ Overlay
 
         p {
             max-width: 80%;
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
     }
 }
