@@ -51,6 +51,10 @@ Page CSS
     --transition: all 150ms ease-in-out;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
