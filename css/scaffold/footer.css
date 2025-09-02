@@ -15,7 +15,7 @@ Footer
     justify-content: flex-end;
     align-items: center;
     column-gap: 7px;
-    padding: var(--space--xl) 0;
+    padding: var(--space) 0;
 
     .c-heading {
         color: var(--color-component--darkgray);
@@ -58,6 +58,7 @@ Footer
     padding-bottom: 85px;
 
     .c-text {
+        font-size: var(--font-size--sm);
         text-align: center;
         color: var(--color-component--darkgray);
         margin: 0;
