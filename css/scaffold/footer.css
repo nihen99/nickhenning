@@ -33,7 +33,7 @@ Footer
 }
 
 .c-footer__container {
-    margin: var(--space) auto;
+    margin: var(--space) auto !important;
 }
 
 .c-footer__grid {
@@ -69,11 +69,6 @@ Footer
 @media (min-width: 600px) {
     .c-footer__quote {
         display: flex;
-    }
-}
-
-@media (min-width: 1000px) {
-    .c-footer__quote {
         flex-direction: row;
 
         svg {
@@ -87,5 +82,7 @@ Footer
         margin-bottom: 0;
     }
 }
+
+@media (min-width: 1000px) {}
 
 @media (min-width: 1440px) {}
