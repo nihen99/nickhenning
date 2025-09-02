@@ -38,7 +38,9 @@ Modals
 }
 
 /* Responsive Styles */
-@media (min-width: 600px) {
+@media (min-width: 600px) {}
+
+@media (min-width: 1000px) {
     .c-modal__content {
         left: 50%;
         transform: translateX(-50%);
@@ -46,7 +48,5 @@ Modals
         max-width: 66%;
     }
 }
-
-@media (min-width: 1000px) {}
 
 @media (min-width: 1440px) {}
