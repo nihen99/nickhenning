@@ -42,7 +42,7 @@ Footer
     row-gap: var(--space--xs);
     justify-content: center;
     align-items: center;
-    margin-bottom: 85px;
+    padding-bottom: 85px;
 }
 
 .c-footer__socials {
@@ -83,6 +83,10 @@ Footer
     }
 }
 
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+    .c-footer__grid {
+        padding-bottom: 0;
+    }
+}
 
 @media (min-width: 1440px) {}
