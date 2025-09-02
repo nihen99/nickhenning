@@ -47,4 +47,9 @@ $(document).ready(function () {
       });
     }
   });
+
+  $('.js-consent-update').on('click', function () {
+    location.reload();
+  });
+
 });
