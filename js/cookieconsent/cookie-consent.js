@@ -88,13 +88,33 @@ $(document).ready(function () {
   $(document).on('click', '.js-cookie-consent-accept', function () {
     $toggle.prop('checked', true);
     localStorage.setItem('spotifyConsent', 'accepted');
-    location.reload();
+    
+    $('body').append($toast);
+    $toast.fadeIn(200).css('opacity', '1');
+
+    // Nach 2 Sekunden ausblenden und entfernen, dann reload
+    setTimeout(() => {
+      $toast.fadeOut(500, function () {
+        $(this).remove();
+        location.reload();
+      });
+    }, 2000);
   });
 
   // Ablehnen außerhalb des Modals
   $(document).on('click', '.js-cookie-consent-decline', function () {
     $toggle.prop('checked', false);
     localStorage.setItem('spotifyConsent', 'declined');
-    location.reload();
+    
+    $('body').append($toast);
+    $toast.fadeIn(200).css('opacity', '1');
+
+    // Nach 2 Sekunden ausblenden und entfernen, dann reload
+    setTimeout(() => {
+      $toast.fadeOut(500, function () {
+        $(this).remove();
+        location.reload();
+      });
+    }, 2000);
   });
 });
