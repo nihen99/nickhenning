@@ -165,9 +165,13 @@
             .then(res => res.text())
             .then(html => {
                 document.getElementById('pFooter').innerHTML = html;
-            });
 
-        document.getElementById('footerCopyrightYear').textContent = new Date().getFullYear();
+                // Jetzt ist der Footer im DOM → Jahr setzen
+                const yearSpan = document.getElementById('footerCopyrightYear');
+                if (yearSpan) {
+                    yearSpan.textContent = new Date().getFullYear();
+                }
+            });
     </script>
 
 
