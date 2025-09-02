@@ -14,12 +14,29 @@
         rel="stylesheet">
     <!--Files-->
     <link rel="stylesheet" href="css/include.css">
-    <script defer type="text/javascript" src="js/include.js"></script>
 </head>
 
 <body>
-    <!-- Nav -->
+    <!--Nav-->
     <div id="pNav"></div>
+    <script>
+        fetch('partials/nav.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('pNav').innerHTML = html;
+
+                setTimeout(() => {
+                    const currentPage = window.location.pathname.split('/').pop();
+
+                    document.querySelectorAll('.c-nav__list__item').forEach(link => {
+                        const href = link.getAttribute('href');
+                        if (href === currentPage) {
+                            link.classList.add('c-nav__list__item--current');
+                        }
+                    });
+                }, 0);
+            });
+    </script>
 
     <div class="c-message">
         <div class="c-message__head">
@@ -36,7 +53,7 @@
             with their respective owners.</span>
     </div>
 
-    <!-- Overlay -->
+    <!--Overlay-->
     <div class="container--full c-overlay">
         <img id="overlay-homepage-image" class="c-image c-image--21x9 c-overlay__image" />
         <div class="c-overlay__content inverted">
@@ -46,7 +63,7 @@
             <a id="overlay-homepage-button" class="c-btn c-btn--inverted"></a>
         </div>
     </div>
-    <!-- Slider -->
+    <!--Slider-->
     <div class="container">
         <h2 class="c-heading c-heading--h2 c-heading--has-subheading">Headline H2</h2>
         <h3 class="c-subheading">Headline H3</h3>
@@ -97,7 +114,7 @@
             </div>
         </div>
     </div>
-    <!-- Overlay -->
+    <!--Overlay-->
     <div class="container--full c-overlay">
         <img id="overlay-gallery-image" class="c-image c-image--21x9 c-overlay__image" />
         <div class="c-overlay__content inverted">
@@ -107,11 +124,11 @@
             <a id="overlay-gallery-button" class="c-btn c-btn--inverted"></a>
         </div>
     </div>
-    <!-- Cards -->
+    <!--Cards-->
     <div class="container">
         <div class="c-grid c-grid--66">
             <div class="c-card">
-                <!-- Mini Cookie Consent -->
+                <!--Mini Cookie Consent-->
                 <div class="c-cookie-consent js-cookie-consent-container">
 
                 </div>
@@ -134,8 +151,11 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <div id="pFooter"></div>
+    <footer class="c-footer">
+        <div class="container">
+            <button class="c-btn js-open-consent-modal">Datenschutz-Einstellungen</button>
+        </div>
+    </footer>
 
     <!-- Modal Cookie Consent -->
     <div class="c-modal js-cookie-consent-modal" style="display:none;">
@@ -162,8 +182,7 @@
             <label class="c-switch">
                 <input name="switchSpotify" type="checkbox" class="js-consent-toggle">
                 <span class="c-switch-slider"></span>
-                <span class="c-text c-switch-label">Ich bin damit einverstanden, dass externe Inhalte wie Spotify
-                    eingebunden
+                <span class="c-text c-switch-label">Ich bin damit einverstanden, dass externe Inhalte wie Spotify eingebunden
                     werden und dabei personenbezogene Daten an Drittanbieter übermittelt werden.</span>
             </label>
 
@@ -178,6 +197,7 @@
     <script type="text/javascript" src="lib/jquery/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="lib/slick/slick.js"></script>
     <script defer type="text/javascript" src="js/slick/init.js"></script>
+    <script defer type="text/javascript" src="js/cookieconsent/cookie-consent.js"></script>
     <!--Data-->
     <script defer type="text/javascript" src="data/data.js"></script>
 

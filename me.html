@@ -19,6 +19,24 @@
 <body>
     <!--Nav-->
     <div id="pNav"></div>
+    <script>
+        fetch('partials/nav.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('pNav').innerHTML = html;
+
+                setTimeout(() => {
+                    const currentPage = window.location.pathname.split('/').pop();
+
+                    document.querySelectorAll('.c-nav__list__item').forEach(link => {
+                        const href = link.getAttribute('href');
+                        if (href === currentPage) {
+                            link.classList.add('c-nav__list__item--current');
+                        }
+                    });
+                }, 0);
+            });
+    </script>
 
     <div class="c-message">
         <div class="c-message__head">
@@ -81,9 +99,11 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <div id="pFooter"></div>
-    
+    <footer class="c-footer">
+        <div class="container">
+            <button class="c-btn js-open-consent-modal">Datenschutz-Einstellungen</button>
+        </div>
+    </footer>
 
     <!-- Modal Cookie Consent -->
     <div class="c-modal js-cookie-consent-modal" style="display:none;">
