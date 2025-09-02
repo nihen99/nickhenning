@@ -57,7 +57,7 @@ Lightbox
 }
 
 .c-lightbox__arrow--next svg {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
 }
 
 .c-lightbox__close {
