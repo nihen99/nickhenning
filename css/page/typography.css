@@ -20,6 +20,7 @@ Headlines
 
 .c-heading--h1 {
     font-size: var(--font-size--heading);
+    margin-bottom: var(--space--lg);
 }
 
 .c-heading--h2 {
