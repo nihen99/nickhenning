@@ -13,10 +13,14 @@ Toast
     align-items: center;
     column-gap: var(--space--xs);
     background-color: var(--color-component--lightgray);
-    padding: var(--space--xs) var(--space--sm);
-    border-radius: var(--space--sm);
-    color: var(--color-text);
+    padding: var(--space--sm) var(--space);
+    border-radius: var(--space--xs);
+    color: var(--color-primary);
     font-size: var(--font-size);
     backdrop-filter: blur(4px) saturate(180%);
     transition: var(--transition);
+
+    >span {
+        color: var(--color-text);
+    }
 }
