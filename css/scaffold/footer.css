@@ -6,13 +6,13 @@ Footer
 .c-footer {
     display: flex;
     flex-direction: column;
-    row-gap: var(--space--xl);
 }
 
 .c-footer__quote {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: var(--space--xl);
 
     .c-heading {
         font-style: italic;
@@ -20,7 +20,7 @@ Footer
 
     svg {
         fill: var(--color-primary);
-        transform: translateY(-100%);
+        transform: translateY(-125%) scale(1.5);
     }
 }
 
@@ -30,6 +30,7 @@ Footer
     align-items: center;
     flex-direction: row;
     column-gap: var(--space--sm);
+    margin-bottom: var(--space--xl);
 
     a {
         padding: var(--space--sm);
@@ -37,6 +38,8 @@ Footer
 }
 
 .c-footer__copyright {
+    margin-bottom: 100px;
+
     .c-text {
         text-align: center;
         color: var(--color-component--darkgray);
