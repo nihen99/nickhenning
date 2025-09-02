@@ -29,22 +29,12 @@ Modals
     background-color: var(--color-component--white);
     outline: 1px solid var(--color-component--gray);
     border-bottom-left-radius: var(--space--xxl);
-    border-bottom-right-radius: var(--space-xxl);
+    border-bottom-right-radius: var(--space--xxl);
     backdrop-filter: blur(12px) saturate(180%);
 
     > .c-text {
         margin-bottom: var(--space--lg);
     }
-}
-
-.c-modal__blur {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: var(--space);
-    background-color: var(--color-component--white--22);
-    backdrop-filter: blur(4px);
 }
 
 /* Responsive Styles */
