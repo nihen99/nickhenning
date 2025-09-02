@@ -18,11 +18,13 @@ Footer
     border-bottom-right-radius: 20rem;
 
     .c-heading {
+        color: var(--color-component--darkgray);
         font-style: italic;
         margin: 0;
     }
 
     svg {
+        display: none;
         fill: var(--color-primary);
         transform: translateY(-125%) scale(1.5);
     }
@@ -56,6 +58,9 @@ Footer
 @media (min-width: 600px) {}
 
 @media (min-width: 1000px) {
+    .c-footer__quote {
+        display: block;
+    }
     .c-footer__grid {
         margin-bottom: 0;
     }
