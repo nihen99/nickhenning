@@ -78,7 +78,7 @@ Slider
         padding: var(--space--sm);
         border: none;
         border-radius: 4px;
-        background-color: var(--color-component--gray);
+        background-color: transparent;
         color: var(--color-component--black);
         line-height: 1;
     }
