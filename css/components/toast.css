@@ -6,8 +6,9 @@ Toast
 .c-toast {
     z-index: 10;
     position: fixed;
-    top: var(--space--lg);
-    right: var(--space--lg);
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,3 +26,18 @@ Toast
         color: var(--color-text);
     }
 }
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    .c-toast {
+        top: var(--space--lg);
+        bottom: auto;
+        right: var(--space--lg);
+        left: auto;
+        transform: none;
+    }
+}
+
+@media (min-width: 1000px) {}
+
+@media (min-width: 1440px) {}
