@@ -4,11 +4,11 @@ Switch
 */
 
 .c-switch {
-        cursor: pointer;
-            user-select: none;
+    cursor: pointer;
+    user-select: none;
     display: flex;
     align-items: center;
-    column-gap: var(--space--xs);
+    column-gap: var(--space--sm);
     margin-bottom: var(--space--lg);
 }
 
@@ -33,9 +33,10 @@ Switch
     right: auto;
     width: var(--space--lg);
     height: var(--space--lg);
-    background-color: var(--color-component--gray);
+    background-color: var(--color-component--darkgray);
     outline: 2px solid var(--color-component--white);
-    border-radius: var(--space--xxl);;
+    border-radius: var(--space--xxl);
+    ;
     transition: var(--transition);
 }
 

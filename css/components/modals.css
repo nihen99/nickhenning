@@ -16,10 +16,9 @@ Modals
 .c-modal__content {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    min-width: 80%;
-    max-width: 80%;
+    left: 0;
+    min-width: 100%;
+    max-width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -36,6 +35,8 @@ Modals
 /* Responsive Styles */
 @media (min-width: 600px) {
     .c-modal__content {
+        left: 50%;
+        transform: translateX(-50%);
         min-width: 66%;
         max-width: 66%;
     }
