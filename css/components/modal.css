@@ -15,7 +15,7 @@ Modals
 
 .c-modal__content {
     overflow-y: scroll;
-    max-height: 80%;
+    max-height: 70%;
     position: absolute;
     top: 0;
     left: 0;
@@ -38,6 +38,7 @@ Modals
 }
 
 .c-modal__content::after {
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
