@@ -9,7 +9,9 @@ Switch
     display: flex;
     align-items: center;
     column-gap: var(--space--sm);
+    width: 100%;
     margin-bottom: var(--space--lg);
+    -webkit-tap-highlight-color: transparent;
 }
 
 .c-switch input[type="checkbox"] {
