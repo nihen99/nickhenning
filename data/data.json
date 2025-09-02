@@ -2,8 +2,8 @@
     "overlay": {
         "homepage": {
             "heading": "Nick Henning",
-            "subheading": "Musician, Photographer & Dev",
-            "description": "The guitar is my passion and the heart of everything I do as a musician. For over adecade, I’ve been writing songs, crafting riffs, and pouring emotion and energy into my music. Vocals play just as big a role—whether raw and powerful, melancholic, or straight to the point. Stylistically, I move between pop-punk and alternative rock—somewhere between driving, atmospheric, and a little nostalgic.",
+            "subheading": "Musiker · Fotograf · Entwickler",
+            "description": "Kreativität ist mein Werkzeug. Emotion mein Antrieb.",
             "image": {
                 "src": "media/placeholder.webp",
                 "title": "Nick Henning | Official Website"
@@ -31,13 +31,13 @@
         "aboutMe": {
             "image": {
                 "src": "media/placeholder.webp",
-                "title":"About me"
+                "title":"Über mich"
             },
-            "title": "About Me",
-            "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod temporinvidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+            "title": "Über mich",
+            "description": "Ich bin Nick – leidenschaftlicher Musiker mit Hang zu atmosphärischem Pop-Punk und Alternative Rock. Seit über einem Jahrzehnt schreibe ich Songs, produziere Tracks und bringe Emotionen in Klangform. Neben der Musik bin ich als Fotograf und Webentwickler kreativ unterwegs.",
             "button": {
                 "href": "me.html",
-                "title": "About me"
+                "title": "Mehr erfahren"
             }
         },
         "music": {
