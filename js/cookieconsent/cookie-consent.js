@@ -1,61 +1,66 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const consentContainer = document.querySelector('.js-cookie-consent-container');
-    const embedHTML = `
-      <iframe title="Spotify iframe of Artist Nick Henning" data-testid="embed-iframe" style="height: 375px; min-height: 375px; max-height: 375px;"
-        src="https://open.spotify.com/embed/artist/3NOae9Khh92LtyDsu8UFYL?utm_source=generator&theme=0"
-        width="100%" height="375px" frameBorder="0" allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"></iframe>
-    `;
+$(document).ready(function () {
+  const $consentContainer = $('.js-cookie-consent-container');
+  const $modal = $('.js-cookie-consent-modal');
+  const embedHTML = `
+    <iframe title="Spotify iframe of Artist Nick Henning" data-testid="embed-iframe"
+      style="height: 375px; min-height: 375px; max-height: 375px;"
+      src="https://open.spotify.com/embed/artist/3NOae9Khh92LtyDsu8UFYL?utm_source=generator&theme=0"
+      width="100%" height="375px" frameborder="0" allowfullscreen
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"></iframe>
+  `;
 
-    function renderDeclineMessage() {
-      consentContainer.innerHTML = `
-        <div class="c-cookie-consent__content">
-            <h3 class="c-heading c-heading--h3">Einbindung blockiert</h3>
-            <p class="c-text">Du hast die Spotify Einbindung abgeleht, dadurch hast du das Tracking von Spotify blockiert. Du möchtest die Einbindung aktivieren?</p>
-            <button class="c-btn c-btn--primary js-cookie-consent-accept">Aktivieren</button>
-        </div>
-      `;
-      localStorage.setItem('spotifyConsent', 'declined');
+  function renderDeclineMessage() {
+    $consentContainer.html(`
+      <div class="c-cookie-consent__content">
+        <h3 class="c-heading c-heading--h3">Einbindung blockiert</h3>
+        <p class="c-text">Du hast die Spotify Einbindung abgelehnt. Möchtest du sie aktivieren?</p>
+        <button class="c-btn c-btn--primary js-cookie-consent-accept">Aktivieren</button>
+      </div>
+    `).fadeIn();
 
-      document.querySelector('.js-cookie-consent-accept').addEventListener('click', () => {
-        consentContainer.innerHTML = embedHTML;
-        localStorage.setItem('spotifyConsent', 'accepted');
-      });
-    }
+    localStorage.setItem('spotifyConsent', 'declined');
 
-    const savedConsent = localStorage.getItem('spotifyConsent');
-    if (savedConsent === 'accepted') {
-      consentContainer.innerHTML = embedHTML;
-    } else if (savedConsent === 'declined') {
-      renderDeclineMessage();
-    } else {
-      document.querySelector('.js-cookie-consent-accept').addEventListener('click', () => {
-        consentContainer.innerHTML = embedHTML;
-        localStorage.setItem('spotifyConsent', 'accepted');
-      });
-
-      document.querySelector('.js-cookie-consent-decline').addEventListener('click', () => {
-        renderDeclineMessage();
-      });
-    }
-
-    // Modal logic
-    document.querySelector('.js-open-consent-modal').addEventListener('click', () => {
-      document.querySelector('.js-cookie-consent-modal').style.display = 'flex';
-    });
-
-    document.querySelector('.js-consent-close').addEventListener('click', () => {
-      document.querySelector('.js-cookie-consent-modal').style.display = 'none';
-    });
-
-    document.querySelector('.js-consent-accept').addEventListener('click', () => {
+    $('.js-cookie-consent-accept').on('click', function () {
       localStorage.setItem('spotifyConsent', 'accepted');
-      location.reload();
+      $consentContainer.fadeOut(function () {
+        $consentContainer.html(embedHTML).fadeIn();
+      });
     });
+  }
 
-    document.querySelector('.js-consent-decline').addEventListener('click', () => {
-      localStorage.setItem('spotifyConsent', 'declined');
+  const savedConsent = localStorage.getItem('spotifyConsent');
+  if (savedConsent === 'accepted') {
+    $consentContainer.html(embedHTML).fadeIn();
+  } else if (savedConsent === 'declined') {
+    renderDeclineMessage();
+  } else {
+    renderDeclineMessage(); // Default: zeige Modal mit Option
+  }
+
+  // Modal öffnen
+  $('.js-open-consent-modal').on('click', function () {
+    $modal.fadeIn();
+  });
+
+  // Modal schließen
+  $('.js-consent-close').on('click', function () {
+    $modal.fadeOut();
+  });
+
+  // Zustimmung im Modal
+  $('.js-consent-accept').on('click', function () {
+    localStorage.setItem('spotifyConsent', 'accepted');
+    $modal.fadeOut(function () {
       location.reload();
     });
   });
+
+  // Ablehnung im Modal
+  $('.js-consent-decline').on('click', function () {
+    localStorage.setItem('spotifyConsent', 'declined');
+    $modal.fadeOut(function () {
+      location.reload();
+    });
+  });
+});
