@@ -38,67 +38,22 @@
             });
     </script>
 
-    <div class="c-message">
-        <div class="c-message__head">
-            <svg width="16" height="16" fill="currentColor" class="bi bi-wrench-adjustable-circle-fill"
-                viewBox="0 0 16 16">
-                <path
-                    d="M6.705 8.139a.25.25 0 0 0-.288-.376l-1.5.5.159.474.808-.27-.595.894a.25.25 0 0 0 .287.376l.808-.27-.595.894a.25.25 0 0 0 .287.376l1.5-.5-.159-.474-.808.27.596-.894a.25.25 0 0 0-.288-.376l-.808.27z" />
-                <path
-                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m-6.202-4.751 1.988-1.657a4.5 4.5 0 0 1 7.537-4.623L7.497 6.5l1 2.5 1.333 3.11c-.56.251-1.18.39-1.833.39a4.5 4.5 0 0 1-1.592-.29L4.747 14.2a7.03 7.03 0 0 1-2.949-2.951M12.496 8a4.5 4.5 0 0 1-1.703 3.526L9.497 8.5l2.959-1.11q.04.3.04.61" />
-            </svg>
-            <p>Website work in progress</span>
-        </div>
-        <span>Disclaimer: All stock images are temporarily implemented for demonstration purposes. All rights remain
-            with their respective owners.</span>
-    </div>
 
-    <!-- Overlay -->
-    <div class="container--full c-overlay">
-        <img id="overlay-homepage-image" class="c-image c-image--21x9 c-overlay__image" />
-        <div class="c-overlay__content inverted">
-            <h1 id="overlay-homepage-heading" class="c-heading c-heading--h1 c-heading--has-subheading"></h1>
-            <h2 id="overlay-homepage-subheading" class="c-subheading c-subheading--h2"></h2>
-            <p id="overlay-homepage-description" class="c-text"></p>
-            <a id="overlay-homepage-button" class="c-btn c-btn--inverted"></a>
-        </div>
-    </div>
-    <!-- Cards -->
-    <div class="container">
-        <div class="c-grid c-grid--66">
-            <div class="c-card">
-                <div class="c-card__content">
-                    <h3 class="c-heading c-heading--h3">
-                        Card Headline
-                    </h3>
-                    <p class="c-text">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                        invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    </p>
-                    <button class="c-btn">
-                        Das ist ein Button
-                    </button>
-                </div>
-            </div>
-            <div class="c-card">
-                <div class="c-card__content">
-                    <h3 class="c-heading c-heading--h3">
-                        Card Headline
-                    </h3>
-                    <p class="c-text">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                        invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                    </p>
-                    <button class="c-btn">
-                        Das ist ein Button
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Footer (Fetch) -->
+    <div id="pFooter"></div>
+    <script>
+        fetch('partials/footer.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('pFooter').innerHTML = html;
 
+                // Jetzt ist der Footer im DOM → Jahr setzen
+                const yearSpan = document.getElementById('footerCopyrightYear');
+                if (yearSpan) {
+                    yearSpan.textContent = new Date().getFullYear();
+                }
+            });
+    </script>
     <!-- Modal Cookie Consent -->
     <div class="c-modal js-cookie-consent-modal" style="display:none;">
         <div class="c-modal__content">
@@ -124,7 +79,8 @@
             <label class="c-switch">
                 <input name="switchSpotify" type="checkbox" class="js-consent-toggle">
                 <span class="c-switch-slider"></span>
-                <span class="c-text c-switch-label">Ich bin damit einverstanden, dass externe Inhalte wie Spotify eingebunden
+                <span class="c-text c-switch-label">Ich bin damit einverstanden, dass externe Inhalte wie Spotify
+                    eingebunden
                     werden und dabei personenbezogene Daten an Drittanbieter übermittelt werden.</span>
             </label>
 
@@ -135,8 +91,9 @@
         </div>
     </div>
 
-    <!--Scripts-->
+    <!-- Scripts -->
     <script type="text/javascript" src="lib/jquery/jquery-3.7.1.min.js"></script>
+    <!-- Cookie Consent -->
     <script defer type="text/javascript" src="js/cookieconsent/cookie-consent.js"></script>
     <!--Data-->
     <script defer type="text/javascript" src="data/data.js"></script>
