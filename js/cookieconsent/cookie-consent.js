@@ -2,6 +2,7 @@ $(document).ready(function () {
   const $modal = $('.js-cookie-consent-modal');
   const $consentContainer = $('.js-cookie-consent-container');
   const $toggle = $('.js-consent-toggle');
+  const $updateBtn = $('.js-consent-update');
 
   const embedHTML = `
     <iframe title="Spotify iframe of Artist Nick Henning" data-testid="embed-iframe"
@@ -32,9 +33,10 @@ $(document).ready(function () {
     $modal.fadeOut();
   });
 
-  // Toggle Switch Änderung
-  $toggle.on('change', function () {
-    const isChecked = $(this).is(':checked');
+  // Einstellungen übernehmen
+  $updateBtn.on('click', function () {
+    const isChecked = $toggle.is(':checked');
+
     if (isChecked) {
       localStorage.setItem('spotifyConsent', 'accepted');
       $consentContainer.fadeOut(function () {
@@ -46,10 +48,7 @@ $(document).ready(function () {
         $consentContainer.html('<p class="c-text">Spotify-Einbindung wurde blockiert.</p>').fadeIn();
       });
     }
-  });
 
-  $('.js-consent-update').on('click', function () {
-    location.reload();
+    $modal.fadeOut();
   });
-
 });
