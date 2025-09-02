@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Nick Henning - Me</title>
+    <meta name="description" content="Dev, Musician & Photographer">
+    <meta name="author" content="Nick Henning">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--External-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!--Files-->
+    <link rel="stylesheet" href="css/include.css">
+</head>
+
+<body>
+    <!--Nav-->
+    <div id="pNav"></div>
+    <script>
+        fetch('partials/nav.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('pNav').innerHTML = html;
+
+                setTimeout(() => {
+                    const currentPage = window.location.pathname.split('/').pop();
+
+                    document.querySelectorAll('.c-nav__list__item').forEach(link => {
+                        const href = link.getAttribute('href');
+                        if (href === currentPage) {
+                            link.classList.add('c-nav__list__item--current');
+                        }
+                    });
+                }, 0);
+            });
+    </script>
+
+    <div class="c-message">
+        <div class="c-message__head">
+            <svg width="16" height="16" fill="currentColor" class="bi bi-wrench-adjustable-circle-fill"
+                viewBox="0 0 16 16">
+                <path
+                    d="M6.705 8.139a.25.25 0 0 0-.288-.376l-1.5.5.159.474.808-.27-.595.894a.25.25 0 0 0 .287.376l.808-.27-.595.894a.25.25 0 0 0 .287.376l1.5-.5-.159-.474-.808.27.596-.894a.25.25 0 0 0-.288-.376l-.808.27z" />
+                <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m-6.202-4.751 1.988-1.657a4.5 4.5 0 0 1 7.537-4.623L7.497 6.5l1 2.5 1.333 3.11c-.56.251-1.18.39-1.833.39a4.5 4.5 0 0 1-1.592-.29L4.747 14.2a7.03 7.03 0 0 1-2.949-2.951M12.496 8a4.5 4.5 0 0 1-1.703 3.526L9.497 8.5l2.959-1.11q.04.3.04.61" />
+            </svg>
+            <p>Website work in progress</span>
+        </div>
+        <span>Disclaimer: All stock images are temporarily implemented for demonstration purposes. All rights remain
+            with their respective owners.</span>
+    </div>
+
+    <!--Overlay-->
+    <div class="container--full c-overlay">
+        <img id="overlay-homepage-image" class="c-image c-image--21x9 c-overlay__image" />
+        <div class="c-overlay__content inverted">
+            <h1 id="overlay-homepage-heading" class="c-heading c-heading--h1 c-heading--has-subheading"></h1>
+            <h2 id="overlay-homepage-subheading" class="c-subheading c-subheading--h2"></h2>
+            <p id="overlay-homepage-description" class="c-text"></p>
+            <a id="overlay-homepage-button" class="c-btn c-btn--inverted"></a>
+        </div>
+    </div>
+    <!--Cards-->
+    <div class="container">
+        <div class="c-grid c-grid--66">
+            <div class="c-card">
+                <div class="c-card__content">
+                    <h3 class="c-heading c-heading--h3">
+                        Card Headline
+                    </h3>
+                    <p class="c-text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
+                    <button class="c-btn">
+                        Das ist ein Button
+                    </button>
+                </div>
+            </div>
+            <div class="c-card">
+                <div class="c-card__content">
+                    <h3 class="c-heading c-heading--h3">
+                        Card Headline
+                    </h3>
+                    <p class="c-text">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                    </p>
+                    <button class="c-btn">
+                        Das ist ein Button
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="c-footer">
+        <div class="container">
+            <button class="c-btn js-open-consent-modal">Datenschutz-Einstellungen</button>
+        </div>
+    </footer>
+
+    <!-- Modal Cookie Consent -->
+    <div class="c-modal js-cookie-consent-modal" style="display:none;">
+        <div class="c-modal__content">
+            <h3 class="c-heading c-heading--h3">Datenschutz-Einstellungen</h3>
+            <p class="c-text">
+                Wenn du externe Inhalte wie Spotify aktivierst, stelle ich eine Verbindung zu den Servern des jeweiligen
+                Drittanbieters her. Dabei können personenbezogene Daten wie deine IP-Adresse, Geräteinformationen oder
+                dein Nutzungsverhalten an Spotify übermittelt und dort verarbeitet werden.
+            </p>
+            <p class="c-text">
+                Spotify kann diese Daten verwenden, um Inhalte bereitzustellen, dein Verhalten zu analysieren und dir
+                personalisierte Werbung anzuzeigen. Die Datenverarbeitung erfolgt außerhalb meines Einflussbereichs und
+                kann auch in Ländern stattfinden, in denen kein mit der EU vergleichbares Datenschutzniveau besteht.
+            </p>
+            <p class="c-text">
+                Ich brauche deine Einwilligung, um diese Inhalte laden zu dürfen. Du kannst deine Entscheidung jederzeit
+                über die Datenschutz-Einstellungen auf dieser Website ändern. Weitere Informationen zur
+                Datenverarbeitung durch Spotify findest du in deren <a target="_blank"
+                    href="https://www.spotify.com/de/legal/privacy-policy/">Datenschutzerklärung</a>.
+            </p>
+
+            <!-- Toggle Switch -->
+            <label class="c-switch">
+                <input name="switchSpotify" type="checkbox" class="js-consent-toggle">
+                <span class="c-switch-slider"></span>
+                <span class="c-text c-switch-label">Ich bin damit einverstanden, dass externe Inhalte wie Spotify eingebunden
+                    werden und dabei personenbezogene Daten an Drittanbieter übermittelt werden.</span>
+            </label>
+
+            <div class="c-btnbar">
+                <button type="button" class="c-btn c-btn--primary js-consent-update">Einstellungen übernehmen</button>
+                <button type="button" class="c-btn c-btn--inverted js-consent-close">Fenster schließen</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script type="text/javascript" src="lib/jquery/jquery-3.7.1.min.js"></script>
+    <script defer type="text/javascript" src="js/cookieconsent/cookie-consent.js"></script>
+    <!--Data-->
+    <script defer type="text/javascript" src="data/data.js"></script>
+
+</body>
+
+</html>
