@@ -64,7 +64,7 @@ Slider
     li.slick-active>button {
         pointer-events: none;
         cursor: default;
-        background-color: var(--color-primary);
+        background-color: var(--color-primary--33);
         font-weight: 600;
     }
 
