@@ -14,7 +14,7 @@ Footer
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 7px;
     padding: var(--space--xl) 0;
 
     .c-heading {
@@ -26,7 +26,7 @@ Footer
     svg {
         order: -1;
         fill: var(--color-primary);
-        transform: translateY(-125%) scale(1.5);
+        transform: translateY(-77%) scale(1.33);
     }
 }
 
@@ -55,11 +55,12 @@ Footer
 }
 
 .c-footer__copyright {
+    padding-bottom: 85px;
+
     .c-text {
         text-align: center;
         color: var(--color-component--darkgray);
         margin: 0;
-        padding-bottom: 85px;
     }
 }
 

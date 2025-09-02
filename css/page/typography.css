@@ -30,6 +30,10 @@ Headlines
     font-size: var(--font-size--heading--h3);
 }
 
+.c-heading--h4 {
+    font-size: var(--font-size--heading--h4);
+}
+
 
 /*
 Subheadlines
