@@ -106,6 +106,8 @@
             .then(res => res.text())
             .then(html => {
                 document.getElementById('pFooter').innerHTML = html;
+
+                initCookieConsent();
             });
     </script>
     

@@ -20,7 +20,7 @@ function showConsentToastAndReload() {
 }
 
 
-$(document).ready(function () {
+function initCookieConsent() {
   const $modal = $('.js-cookie-consent-modal');
   const $consentContainer = $('.js-cookie-consent-container');
   const $toggle = $('.js-consent-toggle');
@@ -77,23 +77,23 @@ $(document).ready(function () {
   });
 
   // Einstellungen übernehmen im Modal
-$updateBtn.on('click', function () {
-  const isChecked = $toggle.is(':checked');
-  localStorage.setItem('spotifyConsent', isChecked ? 'accepted' : 'declined');
-  showConsentToastAndReload();
-});
+  $updateBtn.on('click', function () {
+    const isChecked = $toggle.is(':checked');
+    localStorage.setItem('spotifyConsent', isChecked ? 'accepted' : 'declined');
+    showConsentToastAndReload();
+  });
 
-// Akzeptieren außerhalb des Modals
-$(document).on('click', '.js-cookie-consent-accept', function () {
-  $toggle.prop('checked', true);
-  localStorage.setItem('spotifyConsent', 'accepted');
-  showConsentToastAndReload();
-});
+  // Akzeptieren außerhalb des Modals
+  $(document).on('click', '.js-cookie-consent-accept', function () {
+    $toggle.prop('checked', true);
+    localStorage.setItem('spotifyConsent', 'accepted');
+    showConsentToastAndReload();
+  });
 
-// Ablehnen außerhalb des Modals
-$(document).on('click', '.js-cookie-consent-decline', function () {
-  $toggle.prop('checked', false);
-  localStorage.setItem('spotifyConsent', 'declined');
-  showConsentToastAndReload();
-});
-});
+  // Ablehnen außerhalb des Modals
+  $(document).on('click', '.js-cookie-consent-decline', function () {
+    $toggle.prop('checked', false);
+    localStorage.setItem('spotifyConsent', 'declined');
+    showConsentToastAndReload();
+  });
+}
