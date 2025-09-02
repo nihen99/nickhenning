@@ -29,7 +29,7 @@ Modals
     background-color: var(--color-component--white);
     outline: 1px solid var(--color-component--gray);
     border-bottom-left-radius: var(--space--xxl);
-    border-bottom-right-radius: var(--space-xxl);
+    border-bottom-right-radius: var(--space--xxl);
     backdrop-filter: blur(12px) saturate(180%);
 
     >.c-text {
