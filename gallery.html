@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <!--Nav-->
+    <!-- Nav (Fetch) -->
     <div id="pNav"></div>
     <script>
         fetch('partials/nav.html')
@@ -37,6 +37,15 @@
                 }, 0);
             });
     </script>
+    <!-- Message (Fetch) -->
+    <div id="pMessage"></div>
+    <script>
+        fetch('partials/message.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('pMessage').innerHTML = html;
+            });
+    </script>
     <!--Overlay-->
     <div class="container--full c-overlay">
         <img id="overlay-gallery-image" class="c-image c-image--21x9 c-overlay__image" />
@@ -46,11 +55,10 @@
             <p id="overlay-gallery-description" class="c-text"></p>
         </div>
     </div>
-    <!--Gallery-->
+    <!-- Gallery & Lightbox -->
     <div class="container">
         <div class="c-gallery">
             <div class="c-gallery__grid">
-
             </div>
             <div class="c-lightbox">
                 <button type="button" class="c-lightbox__close">&times;</button>
@@ -73,12 +81,70 @@
             </div>
         </div>
     </div>
+    <!-- Cookie Consent -->
+    <div class="container">
+        <div class="c-btnbar c-btnbar--center">
+            <button class="c-btn c-btn--inverted js-open-consent-modal">
+                Datenschutz-Einstellungen
+            </button>
+        </div>
+    </div>
+    <!-- Footer (Fetch) -->
+    <div id="pFooter"></div>
+    <script>
+        fetch('partials/footer.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('pFooter').innerHTML = html;
+
+                // Jetzt ist der Footer im DOM → Jahr setzen
+                const yearSpan = document.getElementById('footerCopyrightYear');
+                if (yearSpan) {
+                    yearSpan.textContent = new Date().getFullYear();
+                }
+            });
+    </script>
+    <!-- Modal Cookie Consent -->
+    <div class="c-modal js-cookie-consent-modal" style="display:none;">
+        <div class="c-modal__content">
+            <h3 class="c-heading c-heading--h3">Datenschutz-Einstellungen</h3>
+            <p class="c-text">
+                Wenn du externe Inhalte wie Spotify aktivierst, stelle ich eine Verbindung zu den Servern des jeweiligen
+                Drittanbieters her. Dabei können personenbezogene Daten wie deine IP-Adresse, Geräteinformationen oder
+                dein Nutzungsverhalten an Spotify übermittelt und dort verarbeitet werden.
+            </p>
+            <p class="c-text">
+                Spotify kann diese Daten verwenden, um Inhalte bereitzustellen, dein Verhalten zu analysieren und dir
+                personalisierte Werbung anzuzeigen. Die Datenverarbeitung erfolgt außerhalb meines Einflussbereichs und
+                kann auch in Ländern stattfinden, in denen kein mit der EU vergleichbares Datenschutzniveau besteht.
+            </p>
+            <p class="c-text">
+                Ich brauche deine Einwilligung, um diese Inhalte laden zu dürfen. Du kannst deine Entscheidung jederzeit
+                über die Datenschutz-Einstellungen auf dieser Website ändern. Weitere Informationen zur
+                Datenverarbeitung durch Spotify findest du in deren <a target="_blank"
+                    href="https://www.spotify.com/de/legal/privacy-policy/">Datenschutzerklärung</a>.
+            </p>
+
+            <!-- Toggle Switch -->
+            <label class="c-switch">
+                <input name="switchSpotify" type="checkbox" class="js-consent-toggle">
+                <span class="c-switch-slider"></span>
+                <span class="c-text c-switch-label">Ich bin damit einverstanden, dass externe Inhalte wie Spotify
+                    eingebunden
+                    werden und dabei personenbezogene Daten an Drittanbieter übermittelt werden.</span>
+            </label>
+
+            <div class="c-btnbar">
+                <button type="button" class="c-btn c-btn--primary js-consent-update">Einstellungen übernehmen</button>
+                <button type="button" class="c-btn c-btn--inverted js-consent-close">Fenster schließen</button>
+            </div>
+        </div>
+    </div>
 
 
-
-
-    <!--Scripts-->
+    <!-- Scripts -->
     <script type="text/javascript" src="lib/jquery/jquery-3.7.1.min.js"></script>
+    <!-- Gallery Script (Fetch) -->
     <script defer>
         fetch('media/gallery/gallery.json')
             .then(res => res.json())
@@ -96,10 +162,11 @@
             })
             .catch(err => console.error('Fehler beim Laden der Galerie:', err));
     </script>
-
+    <!-- Lightbox Script -->
     <script defer type="text/javascript" src="js/lightbox/lightbox.js"></script>
-    <!--Data-->
+    <!-- Data -->
     <script defer type="text/javascript" src="data/data.js"></script>
+    
 </body>
 
 </html>

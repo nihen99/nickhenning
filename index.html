@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <!--Nav-->
+    <!-- Nav (Fetch) -->
     <div id="pNav"></div>
     <script>
         fetch('partials/nav.html')
@@ -37,23 +37,16 @@
                 }, 0);
             });
     </script>
-
-    <div class="c-message">
-        <div class="c-message__head">
-            <svg width="16" height="16" fill="currentColor" class="bi bi-wrench-adjustable-circle-fill"
-                viewBox="0 0 16 16">
-                <path
-                    d="M6.705 8.139a.25.25 0 0 0-.288-.376l-1.5.5.159.474.808-.27-.595.894a.25.25 0 0 0 .287.376l.808-.27-.595.894a.25.25 0 0 0 .287.376l1.5-.5-.159-.474-.808.27.596-.894a.25.25 0 0 0-.288-.376l-.808.27z" />
-                <path
-                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m-6.202-4.751 1.988-1.657a4.5 4.5 0 0 1 7.537-4.623L7.497 6.5l1 2.5 1.333 3.11c-.56.251-1.18.39-1.833.39a4.5 4.5 0 0 1-1.592-.29L4.747 14.2a7.03 7.03 0 0 1-2.949-2.951M12.496 8a4.5 4.5 0 0 1-1.703 3.526L9.497 8.5l2.959-1.11q.04.3.04.61" />
-            </svg>
-            <p>Website work in progress</span>
-        </div>
-        <span>Disclaimer: All stock images are temporarily implemented for demonstration purposes. All rights remain
-            with their respective owners.</span>
-    </div>
-
-    <!--Overlay-->
+    <!-- Message (Fetch) -->
+    <div id="pMessage"></div>
+    <script>
+        fetch('partials/message.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('pMessage').innerHTML = html;
+            });
+    </script>
+    <!-- Overlay -->
     <div class="container--full c-overlay">
         <img id="overlay-homepage-image" class="c-image c-image--21x9 c-overlay__image" />
         <div class="c-overlay__content inverted">
@@ -62,7 +55,7 @@
             <p id="overlay-homepage-description" class="c-text"></p>
         </div>
     </div>
-    <!--Slider-->
+    <!-- Slider -->
     <div class="container">
         <h2 class="c-heading c-heading--h2 c-heading--has-subheading">Headline H2</h2>
         <h3 class="c-subheading">Headline H3</h3>
@@ -113,7 +106,7 @@
             </div>
         </div>
     </div>
-    <!--Overlay-->
+    <!-- Overlay -->
     <div class="container--full c-overlay">
         <img id="overlay-gallery-image" class="c-image c-image--21x9 c-overlay__image" />
         <div class="c-overlay__content inverted">
@@ -123,7 +116,7 @@
             <a id="overlay-gallery-button" class="c-btn c-btn--inverted"></a>
         </div>
     </div>
-    <!--Cards-->
+    <!-- Cards -->
     <div class="container">
         <div class="c-grid c-grid--66">
             <div class="c-card">
@@ -149,7 +142,6 @@
             </div>
         </div>
     </div>
-
     <!-- Cookie Consent -->
     <div class="container">
         <div class="c-btnbar c-btnbar--center">
@@ -158,8 +150,7 @@
             </button>
         </div>
     </div>
-
-    <!-- Footer -->
+    <!-- Footer (Fetch) -->
     <div id="pFooter"></div>
     <script>
         fetch('partials/footer.html')
@@ -174,8 +165,6 @@
                 }
             });
     </script>
-
-
     <!-- Modal Cookie Consent -->
     <div class="c-modal js-cookie-consent-modal" style="display:none;">
         <div class="c-modal__content">
