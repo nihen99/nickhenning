@@ -31,7 +31,7 @@
         "aboutMe": {
             "image": {
                 "src": "media/placeholder.webp",
-                "title":"Über mich"
+                "title": "Über mich"
             },
             "title": "Über mich",
             "description": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
@@ -43,7 +43,7 @@
         "music": {
             "image": {
                 "src": "media/placeholder_03.webp",
-                "title":"Meine Musik"
+                "title": "Meine Musik"
             },
             "title": "Meine Musik",
             "description": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
@@ -55,7 +55,7 @@
         "gallery": {
             "image": {
                 "src": "media/placeholder_02.webp",
-                "title":"Meine Galerie"
+                "title": "Meine Galerie"
             },
             "title": "Meine Galerie",
             "description": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
@@ -67,13 +67,32 @@
         "projects": {
             "image": {
                 "src": "media/placeholder_04.webp",
-                "title":"Meine Projekte"
+                "title": "Meine Projekte"
             },
             "title": "Meine Projekte",
             "description": "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
             "button": {
                 "href": "projects.html",
                 "title": "Meine Projekte"
+            }
+        }
+    },
+    "modal": {
+        "cookieConsent": {
+            "title": "Datenschutz-Einstellungen Test",
+            "p01": "Wenn du externe Inhalte wie Spotify aktivierst, stelle ich eine Verbindung zu den Servern des jeweiligen Drittanbieters her. Dabei können personenbezogene Daten wie deine IP-Adresse, Geräteinformationen oder dein Nutzungsverhalten an Spotify übermittelt und dort verarbeitet werden.",
+            "p02": "Spotify kann diese Daten verwenden, um Inhalte bereitzustellen, dein Verhalten zu analysieren und dir personalisierte Werbung anzuzeigen. Die Datenverarbeitung erfolgt außerhalb meines Einflussbereichs und kann auch in Ländern stattfinden, in denen kein mit der EU vergleichbares Datenschutzniveau besteht.",
+            "p03": "Ich brauche deine Einwilligung, um diese Inhalte laden zu dürfen. Du kannst deine Entscheidung jederzeit über die Datenschutz-Einstellungen auf dieser Website ändern. Weitere Informationen zur Datenverarbeitung durch Spotify findest du in deren",
+            "p03link": {
+                "href": "https://www.spotify.com/de/legal/privacy-policy/",
+                "title": "Datenschutzerklärung"
+            },
+            "switchLabel": "Ich bin damit einverstanden, dass externe Inhalte wie Spotify eingebunden werden und dabei personenbezogene Daten an Drittanbieter übermittelt werden.",
+            "buttonSave": {
+                "title": "Einstellungen übernehmen"
+            },
+            "buttonClose": {
+                "title": "Fenster schließen"
             }
         }
     }
