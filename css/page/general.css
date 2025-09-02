@@ -75,6 +75,7 @@ img {
 
 a,
 button,
+input,
 [role="button"],
 [tabindex] {
     -webkit-tap-highlight-color: transparent;
