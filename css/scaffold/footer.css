@@ -40,7 +40,6 @@ Footer
     row-gap: var(--space--xs);
     justify-content: center;
     align-items: center;
-    padding-bottom: 85px;
 }
 
 .c-footer__socials {
@@ -60,6 +59,7 @@ Footer
         text-align: center;
         color: var(--color-component--darkgray);
         margin: 0;
+        padding-bottom: 85px;
     }
 }
 
@@ -76,13 +76,14 @@ Footer
 
     .c-footer__grid {
         flex-direction: row;
+        align-items: baseline;
         justify-content: space-between;
         margin-bottom: 0;
     }
 }
 
 @media (min-width: 1000px) {
-    .c-footer__grid {
+    .c-footer__copyright {
         padding-bottom: 0;
     }
 }
