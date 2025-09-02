@@ -1,0 +1,50 @@
+/*
+Switch
+-------------------------------------------
+*/
+
+.c-switch {
+        cursor: pointer;
+            user-select: none;
+    display: flex;
+    align-items: center;
+    column-gap: var(--space--xs);
+}
+
+.c-switch input[type="checkbox"] {
+    display: none;
+}
+
+.c-switch-slider {
+    position: relative;
+    width: var(--space--xxl);
+    height: var(--space--lg);
+    background-color: var(--color-component--lightgray);
+    border-radius: var(--space--xxl);
+    transition: var(--transition);
+}
+
+.c-switch-slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--space--lg);
+    height: var(--space--lg);
+    background-color: var(--color-component--gray);
+    border-radius: var(--space--xxl);;
+    transition: var(--transition);
+}
+
+.c-switch input[type="checkbox"]:checked+.c-switch-slider {
+    background-color: var(--color-primary);
+}
+
+.c-switch input[type="checkbox"]:checked+.c-switch-slider::before {
+    transform: translateX(100%);
+}
+
+.c-switch-label {
+    font-size: var(--font-size);
+    color: var(--color-text);
+}

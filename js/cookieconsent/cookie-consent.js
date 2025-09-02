@@ -1,6 +1,8 @@
 $(document).ready(function () {
-  const $consentContainer = $('.js-cookie-consent-container');
   const $modal = $('.js-cookie-consent-modal');
+  const $consentContainer = $('.js-cookie-consent-container');
+  const $toggle = $('.js-consent-toggle');
+
   const embedHTML = `
     <iframe title="Spotify iframe of Artist Nick Henning" data-testid="embed-iframe"
       style="height: 375px; min-height: 375px; max-height: 375px;"
@@ -10,32 +12,14 @@ $(document).ready(function () {
       loading="lazy"></iframe>
   `;
 
-  function renderDeclineMessage() {
-    $consentContainer.html(`
-      <div class="c-cookie-consent__content">
-        <h3 class="c-heading c-heading--h3">Einbindung blockiert</h3>
-        <p class="c-text">Du hast die Spotify Einbindung abgelehnt. Möchtest du sie aktivieren?</p>
-        <button class="c-btn c-btn--primary js-cookie-consent-accept">Aktivieren</button>
-      </div>
-    `).fadeIn();
-
-    localStorage.setItem('spotifyConsent', 'declined');
-
-    $('.js-cookie-consent-accept').on('click', function () {
-      localStorage.setItem('spotifyConsent', 'accepted');
-      $consentContainer.fadeOut(function () {
-        $consentContainer.html(embedHTML).fadeIn();
-      });
-    });
-  }
-
+  // Initial Consent Check
   const savedConsent = localStorage.getItem('spotifyConsent');
   if (savedConsent === 'accepted') {
     $consentContainer.html(embedHTML).fadeIn();
+    $toggle.prop('checked', true);
   } else if (savedConsent === 'declined') {
-    renderDeclineMessage();
-  } else {
-    renderDeclineMessage(); // Default: zeige Modal mit Option
+    $consentContainer.html('<p class="c-text">Spotify-Einbindung wurde blockiert.</p>').fadeIn();
+    $toggle.prop('checked', false);
   }
 
   // Modal öffnen
@@ -48,19 +32,19 @@ $(document).ready(function () {
     $modal.fadeOut();
   });
 
-  // Zustimmung im Modal
-  $('.js-consent-accept').on('click', function () {
-    localStorage.setItem('spotifyConsent', 'accepted');
-    $modal.fadeOut(function () {
-      location.reload();
-    });
-  });
-
-  // Ablehnung im Modal
-  $('.js-consent-decline').on('click', function () {
-    localStorage.setItem('spotifyConsent', 'declined');
-    $modal.fadeOut(function () {
-      location.reload();
-    });
+  // Toggle Switch Änderung
+  $toggle.on('change', function () {
+    const isChecked = $(this).is(':checked');
+    if (isChecked) {
+      localStorage.setItem('spotifyConsent', 'accepted');
+      $consentContainer.fadeOut(function () {
+        $consentContainer.html(embedHTML).fadeIn();
+      });
+    } else {
+      localStorage.setItem('spotifyConsent', 'declined');
+      $consentContainer.fadeOut(function () {
+        $consentContainer.html('<p class="c-text">Spotify-Einbindung wurde blockiert.</p>').fadeIn();
+      });
+    }
   });
 });
