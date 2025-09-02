@@ -30,7 +30,7 @@ Slider
 
 .slick-slide {
     width: 100% !important;
-    padding: 0 var(--space) 0 0;
+    padding: 0 var(--space--sm);
 }
 
 .slick-arrows {
