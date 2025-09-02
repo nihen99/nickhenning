@@ -8,7 +8,7 @@ Switch
     user-select: none;
     display: flex;
     align-items: center;
-    column-gap: var(--space--sm);
+    column-gap: var(--space);
     width: 100%;
     padding: 0 var(--space--lg);
     margin-bottom: var(--space--lg);
