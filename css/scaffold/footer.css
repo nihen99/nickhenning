@@ -10,14 +10,12 @@ Footer
 
 .c-footer__quote {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     column-gap: 10px;
-    margin-bottom: var(--space--xl);
-    padding: var(--space--lg) var(--space--xxxl);
+    padding: var(--space--xxl) var(--space--xxxl);
     background-color: var(--color-component--white);
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
+    border-bottom-right-radius: 20rem;
 
     .c-heading {
         font-style: italic;
@@ -28,6 +26,10 @@ Footer
         fill: var(--color-primary);
         transform: translateY(-125%) scale(1.5);
     }
+}
+
+.c-footer__grid {
+    margin-bottom: 100px;
 }
 
 .c-footer__socials {
@@ -44,8 +46,6 @@ Footer
 }
 
 .c-footer__copyright {
-    margin-bottom: 100px;
-
     .c-text {
         text-align: center;
         color: var(--color-component--darkgray);
@@ -56,8 +56,8 @@ Footer
 @media (min-width: 600px) {}
 
 @media (min-width: 1000px) {
-    .c-footer__quote {
-        
+    .c-footer__grid {
+        margin-bottom: 0;
     }
 }
 
