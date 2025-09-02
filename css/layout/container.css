@@ -31,6 +31,10 @@ Container
     padding: 0 var(--space--xxl);
 }
 
+.container--dark {
+    background-color: var(--color-component--black);
+}
+
 /* Responsive Styles */
 @media (min-width: 600px) {
     .container {

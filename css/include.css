@@ -3,14 +3,14 @@ Include CSS
 -------------------------------------------
 */
 
-@import url(page/footer.css);
 @import url(page/general.css);
 @import url(page/typography.css);
 
+@import url(scaffold/footer.css);
+@import url(scaffold/nav.css);
+
 @import url(layout/container.css);
 @import url(layout/grid.css);
-
-@import url(navigation/nav.css);
 
 /* External CSS */
 @import url(../lib/slick/slick.css);
