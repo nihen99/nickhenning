@@ -19,8 +19,23 @@ $(document).ready(function () {
     $consentContainer.html(embedHTML).fadeIn();
     $toggle.prop('checked', true);
   } else if (savedConsent === 'declined') {
-    $consentContainer.html('<div class="c-cookie-consent__content"> <h3 class="c-heading c-heading--h3">Einbindung blockiert</h3> <p class="c-text">Du hast die Spotify Einbindung abgeleht, dadurch hast du das Tracking von Spotify blockiert. Du möchtest die Einbindung aktivieren?</p> <button class="c-btn c-btn--primary js-cookie-consent-accept">Aktivieren</button> </div>').fadeIn();
+    $consentContainer.html(`
+      <div class="c-cookie-consent__content">
+        <h3 class="c-heading c-heading--h3">Einbindung blockiert</h3>
+        <p class="c-text">Du hast die Spotify Einbindung abgelehnt. Du möchtest die Einbindung aktivieren?</p>
+        <button class="c-btn c-btn--primary js-cookie-consent-accept">Aktivieren</button>
+      </div>
+    `).fadeIn();
     $toggle.prop('checked', false);
+  } else {
+    $consentContainer.html(`
+      <div class="c-cookie-consent__content">
+        <h3 class="c-heading c-heading--h3">Spotify-Einbindung</h3>
+        <p class="c-text">Möchtest du die Spotify-Einbindung aktivieren?</p>
+        <button class="c-btn c-btn--primary js-cookie-consent-accept">Akzeptieren</button>
+        <button class="c-btn c-btn--inverted js-cookie-consent-decline">Ablehnen</button>
+      </div>
+    `).fadeIn();
   }
 
   // Modal öffnen
@@ -33,22 +48,30 @@ $(document).ready(function () {
     $modal.fadeOut();
   });
 
-  // Einstellungen übernehmen
+  // Einstellungen übernehmen im Modal
   $updateBtn.on('click', function () {
     const isChecked = $toggle.is(':checked');
 
     if (isChecked) {
       localStorage.setItem('spotifyConsent', 'accepted');
-      $consentContainer.fadeOut(function () {
-        $consentContainer.html(embedHTML).fadeIn();
-      });
     } else {
       localStorage.setItem('spotifyConsent', 'declined');
-      $consentContainer.fadeOut(function () {
-        $consentContainer.html('<p class="c-text">Spotify-Einbindung wurde blockiert.</p>').fadeIn();
-      });
     }
 
-    $modal.fadeOut();
+    location.reload(); // Seite neu laden
+  });
+
+  // Akzeptieren außerhalb des Modals
+  $(document).on('click', '.js-cookie-consent-accept', function () {
+    $toggle.prop('checked', true);
+    localStorage.setItem('spotifyConsent', 'accepted');
+    location.reload();
+  });
+
+  // Ablehnen außerhalb des Modals
+  $(document).on('click', '.js-cookie-consent-decline', function () {
+    $toggle.prop('checked', false);
+    localStorage.setItem('spotifyConsent', 'declined');
+    location.reload();
   });
 });
