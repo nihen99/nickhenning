@@ -59,7 +59,6 @@ Footer
         transition: var(--transition);
     }
 
-    a:hover,
     a:active,
     a:focus-visible {
         background-color: var(--color-primary--33);
