@@ -166,8 +166,10 @@
             .then(html => {
                 document.getElementById('pFooter').innerHTML = html;
             });
+
+        document.getElementById('footerCopyrightYear').textContent = new Date().getFullYear();
     </script>
-    
+
 
     <!-- Modal Cookie Consent -->
     <div class="c-modal js-cookie-consent-modal" style="display:none;">
@@ -194,7 +196,8 @@
             <label class="c-switch">
                 <input name="switchSpotify" type="checkbox" class="js-consent-toggle">
                 <span class="c-switch-slider"></span>
-                <span class="c-text c-switch-label">Ich bin damit einverstanden, dass externe Inhalte wie Spotify eingebunden
+                <span class="c-text c-switch-label">Ich bin damit einverstanden, dass externe Inhalte wie Spotify
+                    eingebunden
                     werden und dabei personenbezogene Daten an Drittanbieter übermittelt werden.</span>
             </label>
 
