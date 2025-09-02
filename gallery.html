@@ -107,36 +107,25 @@
     <!-- Modal Cookie Consent -->
     <div class="c-modal js-cookie-consent-modal" style="display:none;">
         <div class="c-modal__content">
-            <h3 class="c-heading c-heading--h3">Datenschutz-Einstellungen</h3>
-            <p class="c-text">
-                Wenn du externe Inhalte wie Spotify aktivierst, stelle ich eine Verbindung zu den Servern des jeweiligen
-                Drittanbieters her. Dabei können personenbezogene Daten wie deine IP-Adresse, Geräteinformationen oder
-                dein Nutzungsverhalten an Spotify übermittelt und dort verarbeitet werden.
-            </p>
-            <p class="c-text">
-                Spotify kann diese Daten verwenden, um Inhalte bereitzustellen, dein Verhalten zu analysieren und dir
-                personalisierte Werbung anzuzeigen. Die Datenverarbeitung erfolgt außerhalb meines Einflussbereichs und
-                kann auch in Ländern stattfinden, in denen kein mit der EU vergleichbares Datenschutzniveau besteht.
-            </p>
-            <p class="c-text">
-                Ich brauche deine Einwilligung, um diese Inhalte laden zu dürfen. Du kannst deine Entscheidung jederzeit
-                über die Datenschutz-Einstellungen auf dieser Website ändern. Weitere Informationen zur
-                Datenverarbeitung durch Spotify findest du in deren <a target="_blank"
-                    href="https://www.spotify.com/de/legal/privacy-policy/">Datenschutzerklärung</a>.
+            <h3 id="modal-cookieConsent-title" class="c-heading c-heading--h3"></h3>
+            <p id="modal-cookieConsent-p01" class="c-text"></p>
+            <p id="modal-cookieConsent-p02" class="c-text"></p>
+            <p id="modal-cookieConsent-p03" class="c-text">
+                <a id="modal-cookieConsent-p03Link" target="_blank"></a>.
             </p>
 
             <!-- Toggle Switch -->
             <label class="c-switch">
                 <input name="switchSpotify" type="checkbox" class="js-consent-toggle">
                 <span class="c-switch-slider"></span>
-                <span class="c-text c-switch-label">Ich bin damit einverstanden, dass externe Inhalte wie Spotify
-                    eingebunden
-                    werden und dabei personenbezogene Daten an Drittanbieter übermittelt werden.</span>
+                <span id="modal-cookieConsent-switchLabel" class="c-text c-switch-label"></span>
             </label>
 
             <div class="c-btnbar">
-                <button type="button" class="c-btn c-btn--primary js-consent-update">Einstellungen übernehmen</button>
-                <button type="button" class="c-btn c-btn--inverted js-consent-close">Fenster schließen</button>
+                <button id="modal-cookieConsent-buttonSave" type="button"
+                    class="c-btn c-btn--primary js-consent-update"></button>
+                <button id="modal-cookieConsent-buttonClose" type="button"
+                    class="c-btn c-btn--inverted js-consent-close"></button>
             </div>
         </div>
     </div>
