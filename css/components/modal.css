@@ -15,9 +15,7 @@ Modals
 
 .c-modal__close {
     cursor: pointer;
-    position: fixed;
-    top: var(--space--xl);
-    right: var(--space--xl);
+    justify-self: flex-end;
     padding: var(--space);
     border: none;
     background-color: transparent;
