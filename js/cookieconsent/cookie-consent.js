@@ -19,7 +19,7 @@ $(document).ready(function () {
     $consentContainer.html(embedHTML).fadeIn();
     $toggle.prop('checked', true);
   } else if (savedConsent === 'declined') {
-    $consentContainer.html('<p class="c-text">Spotify-Einbindung wurde blockiert.</p>').fadeIn();
+    $consentContainer.html('<div class="c-cookie-consent__content"> <h3 class="c-heading c-heading--h3">Einbindung blockiert</h3> <p class="c-text">Du hast die Spotify Einbindung abgeleht, dadurch hast du das Tracking von Spotify blockiert. Du möchtest die Einbindung aktivieren?</p> <button class="c-btn c-btn--primary js-cookie-consent-accept">Aktivieren</button> </div>').fadeIn();
     $toggle.prop('checked', false);
   }
 
