@@ -13,7 +13,7 @@ Toast
     justify-content: center;
     align-items: center;
     column-gap: var(--space--xs);
-    width: fit-content;
+    width: 80%;
     background-color: var(--color-component--lightgray);
     padding: var(--space--sm) var(--space);
     outline: 1px solid var(--color-component--gray);
@@ -35,6 +35,7 @@ Toast
         bottom: auto;
         right: var(--space--lg);
         left: auto;
+        width: fit-content;
         transform: none;
     }
 }
