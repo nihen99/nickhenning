@@ -5,29 +5,32 @@ Container
 
 .container {
     height: fit-content;
-    max-width: var(--container);
+    min-width: var(--container--full);
+    max-width: var(--container--full);
     margin: var(--space--xxl) auto;
     padding: 0 var(--space--xxl);
 }
 
 .container--full {
     height: fit-content;
-    max-width: var(--container--full);
     min-width: var(--container--full);
+    max-width: var(--container--full);
     margin: 0;
     padding: 0;
 }
 
 .container--sm {
     height: fit-content;
-    max-width: var(--container--sm);
+    min-width: var(--container--full);
+    max-width: var(--container--full);
     margin: var(--space--xxl) auto;
     padding: 0 var(--space--xxl);
 }
 
 .container--lg {
     height: fit-content;
-    max-width: var(--container--lg);
+    min-width: var(--container--full);
+    max-width: var(--container--full);
     margin: var(--space--xxl) auto;
     padding: 0 var(--space--xxl);
 }
@@ -48,19 +51,23 @@ Container
 @media (min-width: 1000px) {
     .container {
         min-width: var(--container);
+        max-width: var(--container);
     }
 
     .container--sm {
         min-width: var(--container--sm);
+        max-width: var(--container--sm);
     }
 
     .container--lg {
         min-width: var(--container);
+        max-width: var(--container);
     }
 }
 
 @media (min-width: 1440px) {
     .container--lg {
         min-width: var(--container--lg);
+        max-width: var(--container--lg);
     }
 }
