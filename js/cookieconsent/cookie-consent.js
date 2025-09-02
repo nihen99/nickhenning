@@ -30,10 +30,14 @@ $(document).ready(function () {
   } else {
     $consentContainer.html(`
       <div class="c-cookie-consent__content">
-        <h3 class="c-heading c-heading--h3">Spotify-Einbindung</h3>
-        <p class="c-text">Möchtest du die Spotify-Einbindung aktivieren?</p>
-        <button class="c-btn c-btn--primary js-cookie-consent-accept">Akzeptieren</button>
-        <button class="c-btn c-btn--inverted js-cookie-consent-decline">Ablehnen</button>
+        <h3 class="c-heading c-heading--h3">Spotify Einbindung?</h3>
+        <p class="c-text">Um Spotify-Inhalte zu laden, benötigen ich deine Zustimmung. Die Zustimmung
+            aktiviert das Tracking von Spotify. Du kannst deine Zustimmung über die
+            Datenschutz-Einstellungen jederzeit anpassen.</p>
+        <div class="c-btnbar">
+          <button type="button" class="c-btn c-btn--primary js-cookie-consent-accept">Akzeptieren</button>
+          <button type="button" class="c-btn js-cookie-consent-decline">Ablehnen</button>
+        </div>
       </div>
     `).fadeIn();
   }
