@@ -10,11 +10,17 @@ Footer
 }
 
 .c-footer__quote {
-    font-style: italic;
+    .c-heading {
+        font-style: italic
+    }
+
+    ;
 }
 
 .c-footer__socials {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     column-gap: var(--space--sm);
 
@@ -24,6 +30,8 @@ Footer
 }
 
 .c-footer__copyright {
-    text-align: center;
-    color: var(--color-component--darkgray);
+    .c-text {
+        text-align: center;
+        color: var(--color-component--darkgray);
+    }
 }
