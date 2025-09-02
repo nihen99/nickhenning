@@ -58,14 +58,28 @@ $(document).ready(function () {
   $updateBtn.on('click', function () {
     const isChecked = $toggle.is(':checked');
 
-    if (isChecked) {
-      localStorage.setItem('spotifyConsent', 'accepted');
-    } else {
-      localStorage.setItem('spotifyConsent', 'declined');
-    }
+    // Speichere Einstellung
+    localStorage.setItem('spotifyConsent', isChecked ? 'accepted' : 'declined');
 
-    location.reload(); // Seite neu laden
+    // Dynamisch Toast erzeugen
+    const $toast = $(`
+    <div class="c-toast" style="display:none;">
+      ✅ Einstellungen übernommen
+    </div>
+  `);
+
+    $('body').append($toast);
+    $toast.fadeIn(200).css('opacity', '1');
+
+    // Nach 2 Sekunden ausblenden und entfernen, dann reload
+    setTimeout(() => {
+      $toast.fadeOut(500, function () {
+        $(this).remove();
+        location.reload();
+      });
+    }, 2000);
   });
+
 
   // Akzeptieren außerhalb des Modals
   $(document).on('click', '.js-cookie-consent-accept', function () {
