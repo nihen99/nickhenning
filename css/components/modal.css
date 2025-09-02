@@ -13,18 +13,6 @@ Modals
     background-color: var(--color-component--black--66);
 }
 
-.c-modal__close {
-    cursor: pointer;
-    justify-self: flex-end;
-    padding: var(--space);
-    border: none;
-    background-color: transparent;
-    font-size: var(--font-size--xl);
-    line-height: 1;
-    font-weight: 700;
-    color: var(--color-primary);
-}
-
 .c-modal__content {
     position: absolute;
     top: 0;
