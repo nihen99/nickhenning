@@ -31,7 +31,12 @@ Footer
 }
 
 .c-footer__grid {
-    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--space--lg);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 125px;
 }
 
 .c-footer__socials {
@@ -40,7 +45,6 @@ Footer
     align-items: center;
     flex-direction: row;
     column-gap: var(--space--sm);
-    margin-bottom: var(--space--xl);
 
     a {
         padding: var(--space--sm);
@@ -51,6 +55,7 @@ Footer
     .c-text {
         text-align: center;
         color: var(--color-component--darkgray);
+        margin: 0;
     }
 }
 
@@ -59,9 +64,13 @@ Footer
 
 @media (min-width: 1000px) {
     .c-footer__quote {
-        display: block;
+        svg {
+            display: block;
+        }
     }
     .c-footer__grid {
+        flex-direction: row;
+        justify-content: space-between;
         margin-bottom: 0;
     }
 }
