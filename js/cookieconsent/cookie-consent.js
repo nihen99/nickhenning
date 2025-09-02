@@ -22,7 +22,7 @@ $(document).ready(function () {
     $consentContainer.html(`
       <div class="c-cookie-consent__content">
         <h3 class="c-heading c-heading--h3">Einbindung blockiert</h3>
-        <p class="c-text">Du hast die Spotify Einbindung abgelehnt. Du möchtest die Einbindung aktivieren?</p>
+        <p class="c-text">Du hast die Spotify Einbindung abgelehnt. Dadurch hast du das Tracking von Spotify blockiert. Du möchtest die Einbindung aktivieren?</p>
         <button class="c-btn c-btn--primary js-cookie-consent-accept">Aktivieren</button>
       </div>
     `).fadeIn();
@@ -44,6 +44,8 @@ $(document).ready(function () {
 
   // Modal öffnen
   $('.js-open-consent-modal').on('click', function () {
+    const savedConsent = localStorage.getItem('spotifyConsent');
+    $toggle.prop('checked', savedConsent === 'accepted'); // Toggle aktualisieren
     $modal.fadeIn();
   });
 
