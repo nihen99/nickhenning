@@ -1,3 +1,25 @@
+function showConsentToastAndReload() {
+  const $toast = $(`
+    <div class="c-toast" style="display:none;">
+      <svg width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+      </svg>
+      <span>Einstellungen aktualisiert</span>
+    </div>
+  `);
+
+  $('body').append($toast);
+  $toast.fadeIn(200).css('opacity', '1');
+
+  setTimeout(() => {
+    $toast.fadeOut(500, function () {
+      $(this).remove();
+      location.reload();
+    });
+  }, 2000);
+}
+
+
 $(document).ready(function () {
   const $modal = $('.js-cookie-consent-modal');
   const $consentContainer = $('.js-cookie-consent-container');
@@ -55,46 +77,23 @@ $(document).ready(function () {
   });
 
   // Einstellungen übernehmen im Modal
-  $updateBtn.on('click', function () {
-    const isChecked = $toggle.is(':checked');
+$updateBtn.on('click', function () {
+  const isChecked = $toggle.is(':checked');
+  localStorage.setItem('spotifyConsent', isChecked ? 'accepted' : 'declined');
+  showConsentToastAndReload();
+});
 
-    // Speichere Einstellung
-    localStorage.setItem('spotifyConsent', isChecked ? 'accepted' : 'declined');
+// Akzeptieren außerhalb des Modals
+$(document).on('click', '.js-cookie-consent-accept', function () {
+  $toggle.prop('checked', true);
+  localStorage.setItem('spotifyConsent', 'accepted');
+  showConsentToastAndReload();
+});
 
-    // Dynamisch Toast erzeugen
-    const $toast = $(`
-    <div class="c-toast" style="display:none;">
-      <svg width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-      </svg>
-      <span>Einstellungen übernommen</span>
-    </div>
-  `);
-
-    $('body').append($toast);
-    $toast.fadeIn(200).css('opacity', '1');
-
-    // Nach 2 Sekunden ausblenden und entfernen, dann reload
-    setTimeout(() => {
-      $toast.fadeOut(500, function () {
-        $(this).remove();
-        location.reload();
-      });
-    }, 2000);
-  });
-
-
-  // Akzeptieren außerhalb des Modals
-  $(document).on('click', '.js-cookie-consent-accept', function () {
-    $toggle.prop('checked', true);
-    localStorage.setItem('spotifyConsent', 'accepted');
-    location.reload();
-  });
-
-  // Ablehnen außerhalb des Modals
-  $(document).on('click', '.js-cookie-consent-decline', function () {
-    $toggle.prop('checked', false);
-    localStorage.setItem('spotifyConsent', 'declined');
-    location.reload();
-  });
+// Ablehnen außerhalb des Modals
+$(document).on('click', '.js-cookie-consent-decline', function () {
+  $toggle.prop('checked', false);
+  localStorage.setItem('spotifyConsent', 'declined');
+  showConsentToastAndReload();
+});
 });
