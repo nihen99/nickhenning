@@ -3,9 +3,27 @@ Footer
 -------------------------------------------
 */
 
-.c-footer {}
+.c-footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--space--xl);
+}
 
-.c-footer__grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.c-footer__quote {
+    font-style: italic;
+}
+
+.c-footer__socials {
+    display: flex;
+    flex-direction: row;
+    column-gap: var(--space--sm);
+
+    a {
+        padding: var(--space--sm);
+    }
+}
+
+.c-footer__copyright {
+    text-align: center;
+    color: var(--color-component--darkgray);
 }
