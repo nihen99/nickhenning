@@ -50,7 +50,19 @@ Footer
     column-gap: var(--space--sm);
 
     a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: var(--space--sm);
+        border-radius: var(--space--xxxl);
+        background-color: transparent;
+        transition: var(--transition);
+    }
+
+    a:hover,
+    a:active,
+    a:focus-visible {
+        background-color: var(--color-primary--33);
     }
 }
 
@@ -81,6 +93,10 @@ Footer
         align-items: baseline;
         justify-content: space-between;
         margin-bottom: 0;
+    }
+
+    .c-footer__copyright {
+        padding-bottom: 70px;
     }
 }
 
