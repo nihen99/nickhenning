@@ -18,7 +18,7 @@ Switch
 
 .c-switch-slider {
     position: relative;
-    width: var(--space--xxl);
+    width: 32px;
     height: var(--space--lg);
     background-color: var(--color-component--lightgray);
     outline: 1px solid var(--color-component--gray);
@@ -34,19 +34,20 @@ Switch
     right: auto;
     width: var(--space--lg);
     height: var(--space--lg);
-    background-color: var(--color-component--darkgray);
-    border: 1px solid var(--color-component--lightgray);
+    background-color: var(--color-component--gray);
+    border: 2px solid var(--color-component--lightgray);
     border-radius: var(--space--xxl);;
     transition: var(--transition);
 }
 
 .c-switch input[type="checkbox"]:checked+.c-switch-slider {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary--33);
 }
 
 .c-switch input[type="checkbox"]:checked+.c-switch-slider::before {
     left: auto;
     right: 0;
+    background-color: var(--color-primary);
 }
 
 .c-switch-label {
