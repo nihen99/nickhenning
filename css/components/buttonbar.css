@@ -11,3 +11,7 @@ Buttonbar
     column-gap: var(--space--sm);
     row-gap: var(--space--sm);
 }
+
+.c-btnbar--center {
+    justify-content: center;
+}
