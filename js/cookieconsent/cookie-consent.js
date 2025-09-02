@@ -41,12 +41,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Modal logic
-    document.querySelector('.js-open-settings-modal').addEventListener('click', () => {
-      document.querySelector('.js-settings-modal').style.display = 'flex';
+    document.querySelector('.js-open-consent-modal').addEventListener('click', () => {
+      document.querySelector('.js-cookie-consent-modal').style.display = 'flex';
     });
 
-    document.querySelector('.js-settings-close').addEventListener('click', () => {
-      document.querySelector('.js-settings-modal').style.display = 'none';
+    document.querySelector('.js-consent-close').addEventListener('click', () => {
+      document.querySelector('.js-cookie-consent-modal').style.display = 'none';
     });
 
     document.querySelector('.js-consent-accept').addEventListener('click', () => {

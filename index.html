@@ -163,19 +163,19 @@
 
     <footer class="c-footer">
         <div class="container">
-            <button class="c-btn js-open-settings-modal">Datenschutz-Einstellungen</button>
+            <button class="c-btn js-open-consent-modal">Datenschutz-Einstellungen</button>
         </div>
     </footer>
 
-    <!--Modal Settings-->
-    <div class="c-modal js-settings-modal" style="display:none;">
+    <!--Modal Cookie Consent-->
+    <div class="c-modal js-cookie-consent-modal" style="display:none;">
         <div class="c-modal__content">
-            <h2 class="c-heading c-heading--h2">Datenschutz-Einstellungen</h2>
+            <button type="button" class="c-btn c-btn--inverted js-consent-close">Fenster schließen</button>
+            <h3 class="c-heading c-heading--h3">Datenschutz-Einstellungen</h3>
             <p class="c-text">Hier kannst du deine Einwilligung zur Einbindung externer Inhalte wie Spotify ändern.</p>
             <div class="c-btnbar">
                 <button type="button" class="c-btn c-btn--primary js-consent-accept">Akzeptieren</button>
                 <button type="button" class="c-btn c-btn--inverted js-consent-decline">Einbindung blockieren</button>
-                <button type="button" class="c-btn c-btn--inverted js-settings-close">Fenster schließen</button>
             </div>
         </div>
     </div>
