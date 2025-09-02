@@ -53,6 +53,10 @@ Container
     .container--sm {
         min-width: var(--container--sm);
     }
+
+    .container--lg {
+        min-width: var(--container);
+    }
 }
 
 @media (min-width: 1440px) {
