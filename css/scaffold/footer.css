@@ -54,7 +54,7 @@ Footer
         justify-content: center;
         align-items: center;
         padding: var(--space--sm);
-        border-radius: var(--space--xxxl);
+        border-radius: var(--space--xs);
         background-color: transparent;
         transition: var(--transition);
     }
