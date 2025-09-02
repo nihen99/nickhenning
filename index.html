@@ -151,11 +151,15 @@
         </div>
     </div>
 
-    <footer class="c-footer">
-        <div class="container">
-            <button class="c-btn js-open-consent-modal">Datenschutz-Einstellungen</button>
-        </div>
-    </footer>
+    <!-- Footer -->
+    <div id="pFooter"></div>
+    <script>
+        fetch('partials/footer.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('pfooter').innerHTML = html;
+            });
+    </script>
 
     <!-- Modal Cookie Consent -->
     <div class="c-modal js-cookie-consent-modal" style="display:none;">
