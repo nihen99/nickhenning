@@ -43,6 +43,7 @@ Nav
         color: var(--color-component--black);
         background-color: var(--color-primary--66);
     }
+
     .c-nav__list__item-title {
         color: var(--color-component--black);
         font-weight: 500;
@@ -67,7 +68,17 @@ Nav
 
 
 /* Responsive Styles */
-@media (min-width: 600px) {}
+@media (min-width: 600px) {
+    .c-nav {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .c-nav__list {
+        padding: var(--space--sm) var(--space--lg);
+    }
+}
 
 @media (min-width: 1000px) {
     .c-nav {
@@ -76,6 +87,7 @@ Nav
         top: 0;
         bottom: auto;
         left: 0;
+        transform: none;
         width: fit-content;
         height: fit-content;
         border-top-left-radius: 0;
