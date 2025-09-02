@@ -10,11 +10,18 @@ Footer
 }
 
 .c-footer__quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     .c-heading {
-        font-style: italic
+        font-style: italic;
     }
 
-    ;
+    svg {
+        fill: var(--color-primary);
+        transform: translateY(-100%);
+    }
 }
 
 .c-footer__socials {
