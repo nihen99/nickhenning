@@ -18,10 +18,9 @@ Switch
 
 .c-switch-slider {
     position: relative;
-    width: 32px;
+    width: 40px;
     height: var(--space--lg);
-    background-color: var(--color-component--lightgray);
-    outline: 1px solid var(--color-component--gray);
+    background-color: var(--color-component--gray);
     border-radius: var(--space--xxl);
     transition: var(--transition);
 }
@@ -35,7 +34,7 @@ Switch
     width: var(--space--lg);
     height: var(--space--lg);
     background-color: var(--color-component--gray);
-    border: 2px solid var(--color-component--lightgray);
+    outline: 2px solid var(--color-component--white);
     border-radius: var(--space--xxl);;
     transition: var(--transition);
 }
