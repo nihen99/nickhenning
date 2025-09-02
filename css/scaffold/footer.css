@@ -67,7 +67,7 @@ Footer
 }
 
 .c-footer__copyright {
-    padding-bottom: 85px;
+    padding: var(--space--sm) 0 85px 0;
 
     .c-text {
         font-size: var(--font-size--sm);
@@ -96,7 +96,7 @@ Footer
     }
 
     .c-footer__copyright {
-        padding-bottom: 70px;
+        padding: 0 0 70px 0;
     }
 }
 
