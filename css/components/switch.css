@@ -6,12 +6,13 @@ Switch
 .c-switch {
     cursor: pointer;
     user-select: none;
-    display: flex;
-    align-items: center;
-    column-gap: var(--space);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: flex-start;
+    column-gap: var(--space--sm);
     width: 100%;
     padding: 0 var(--space--lg);
-    margin-bottom: var(--space--lg);
+    margin-bottom: var(--space--xxl);
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -21,7 +22,8 @@ Switch
 
 .c-switch-slider {
     position: relative;
-    width: 56px;
+    min-width: 40px;
+    max-width: 40px;
     height: var(--space--lg);
     background-color: var(--color-component--gray);
     border-radius: var(--space--xxl);

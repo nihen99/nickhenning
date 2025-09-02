@@ -15,12 +15,12 @@ Modals
 
 .c-modal__content {
     overflow-y: scroll;
+    max-height: 80%;
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
     max-width: 100%;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
