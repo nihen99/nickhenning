@@ -14,6 +14,7 @@ Modals
 }
 
 .c-modal__content {
+    overflow-y: scroll;
     position: absolute;
     top: 0;
     left: 0;
@@ -30,6 +31,10 @@ Modals
     border-bottom-left-radius: var(--space--lg);
     border-bottom-right-radius: var(--space--lg);
     backdrop-filter: blur(12px) saturate(180%);
+
+    > .c-text {
+        margin-bottom: var(--space--lg);
+    }
 }
 
 /* Responsive Styles */

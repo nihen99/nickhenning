@@ -20,7 +20,7 @@ Switch
 
 .c-switch-slider {
     position: relative;
-    width: 40px;
+    width: 56px;
     height: var(--space--lg);
     background-color: var(--color-component--gray);
     border-radius: var(--space--xxl);
@@ -55,4 +55,5 @@ Switch
 .c-switch-label {
     font-size: var(--font-size);
     color: var(--color-text);
+    margin: 0;
 }
