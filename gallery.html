@@ -82,11 +82,31 @@
         </div>
     </div>
     <!-- Cookie Consent -->
-    <div class="container">
-        <div class="c-btnbar c-btnbar--center">
-            <button class="c-btn c-btn--inverted js-open-consent-modal">
-                Datenschutz-Einstellungen
-            </button>
+    <div class="c-cookie-consent">
+        <div class="container">
+            <div class="c-btnbar">
+                <button type="button" id="modal-cookieConsent-buttonTrigger"
+                    class="c-btn c-btn--inverted c-cookie-consent__trigger js-open-consent-modal"></button>
+            </div>
+        </div>
+        <div class="c-modal js-cookie-consent-modal" style="display:none;">
+            <div class="c-modal__content">
+                <h3 id="modal-cookieConsent-title" class="c-heading c-heading--h3"></h3>
+                <p id="modal-cookieConsent-p01" class="c-text"></p>
+                <p id="modal-cookieConsent-p02" class="c-text"></p>
+                <p id="modal-cookieConsent-p03" class="c-text"></p>
+                <label class="c-switch">
+                    <input name="switchSpotify" type="checkbox" class="js-consent-toggle">
+                    <span class="c-switch-slider"></span>
+                    <span id="modal-cookieConsent-switchLabel" class="c-text c-switch-label"></span>
+                </label>
+                <div class="c-btnbar">
+                    <button id="modal-cookieConsent-buttonSave" type="button"
+                        class="c-btn c-btn--primary js-consent-update"></button>
+                    <button id="modal-cookieConsent-buttonClose" type="button"
+                        class="c-btn c-btn--inverted js-consent-close"></button>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Footer (Fetch) -->
@@ -104,31 +124,6 @@
                 }
             });
     </script>
-    <!-- Modal Cookie Consent -->
-    <div class="c-modal js-cookie-consent-modal" style="display:none;">
-        <div class="c-modal__content">
-            <h3 id="modal-cookieConsent-title" class="c-heading c-heading--h3"></h3>
-            <p id="modal-cookieConsent-p01" class="c-text"></p>
-            <p id="modal-cookieConsent-p02" class="c-text"></p>
-            <p id="modal-cookieConsent-p03" class="c-text">
-                <a id="modal-cookieConsent-p03Link" target="_blank"></a>.
-            </p>
-
-            <!-- Toggle Switch -->
-            <label class="c-switch">
-                <input name="switchSpotify" type="checkbox" class="js-consent-toggle">
-                <span class="c-switch-slider"></span>
-                <span id="modal-cookieConsent-switchLabel" class="c-text c-switch-label"></span>
-            </label>
-
-            <div class="c-btnbar">
-                <button id="modal-cookieConsent-buttonSave" type="button"
-                    class="c-btn c-btn--primary js-consent-update"></button>
-                <button id="modal-cookieConsent-buttonClose" type="button"
-                    class="c-btn c-btn--inverted js-consent-close"></button>
-            </div>
-        </div>
-    </div>
 
 
     <!-- Scripts -->
