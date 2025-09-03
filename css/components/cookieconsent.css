@@ -5,7 +5,10 @@ Cookie Consent
 
 .c-cookie-consent {}
 
-.c-cookie-consent__trigger {}
+.c-cookie-consent__trigger {
+    border: 1px solid var(--color-component--gray);
+    background-color: var(--color-component--lightgray);
+}
 
 .c-cookie-consent-hint {
     display: flex;

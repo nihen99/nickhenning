@@ -2,6 +2,7 @@
 Include CSS
 -------------------------------------------
 */
+@import url(fonts/font.css);
 
 @import url(page/general.css);
 @import url(page/typography.css);
