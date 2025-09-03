@@ -142,21 +142,6 @@
             </div>
         </div>
     </div>
-    <!-- Footer (Fetch) -->
-    <div id="pFooter"></div>
-    <script>
-        fetch('partials/footer.html')
-            .then(res => res.text())
-            .then(html => {
-                document.getElementById('pFooter').innerHTML = html;
-
-                // Jetzt ist der Footer im DOM → Jahr setzen
-                const yearSpan = document.getElementById('footerCopyrightYear');
-                if (yearSpan) {
-                    yearSpan.textContent = new Date().getFullYear();
-                }
-            });
-    </script>
     <!-- Cookie Consent -->
     <div class="c-cookie-consent">
         <div class="container">
@@ -189,6 +174,21 @@
             </div>
         </div>
     </div>
+    <!-- Footer (Fetch) -->
+    <div id="pFooter"></div>
+    <script>
+        fetch('partials/footer.html')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('pFooter').innerHTML = html;
+
+                // Jetzt ist der Footer im DOM → Jahr setzen
+                const yearSpan = document.getElementById('footerCopyrightYear');
+                if (yearSpan) {
+                    yearSpan.textContent = new Date().getFullYear();
+                }
+            });
+    </script>
 
     <!-- Scripts -->
     <script type="text/javascript" src="lib/jquery/jquery-3.7.1.min.js"></script>
