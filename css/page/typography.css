@@ -66,6 +66,19 @@ Paragraphs
     margin-bottom: var(--space--xxl);
 }
 
+.c-text--sm {
+    font-size: var(--font-size--sm);
+    margin-bottom: var(--space-sm);
+}
+
+.c-text--muted {
+    color: var(--color-component--gray);
+}
+
+.c-text--center {
+    text-align: center;
+}
+
 .inverted {
     h1,
     h2,
