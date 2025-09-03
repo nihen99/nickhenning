@@ -3,7 +3,11 @@ Cookie Consent
 -------------------------------------------
 */
 
-.c-cookie-consent {
+.c-cookie-consent {}
+
+.c-cookie-consent__trigger {}
+
+.c-cookie-consent-hint {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,6 +16,6 @@ Cookie Consent
     height: 100%;
 }
 
-.c-cookie-consent__content {
+.c-cookie-consent-hint__content {
     padding: var(--space--lg);
 }

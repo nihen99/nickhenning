@@ -22,7 +22,7 @@ function showConsentToastAndReload() {
 
 $(document).ready(function () {
   const $modal = $('.js-cookie-consent-modal');
-  const $consentContainer = $('.js-cookie-consent-container');
+  const $consentContainer = $('.js-cookie-consent-hint');
   const $toggle = $('.js-consent-toggle');
   const $updateBtn = $('.js-consent-update');
 
@@ -42,7 +42,7 @@ $(document).ready(function () {
     $toggle.prop('checked', true);
   } else if (savedConsent === 'declined') {
     $consentContainer.html(`
-      <div class="c-cookie-consent__content">
+      <div class="c-cookie-consent-hint__content">
         <h3 class="c-heading c-heading--h3">Einbindung blockiert</h3>
         <p class="c-text">Du hast die Spotify Einbindung abgelehnt. Dadurch hast du das Tracking von Spotify blockiert. Du möchtest die Einbindung aktivieren?</p>
         <button class="c-btn c-btn--primary js-cookie-consent-accept">Aktivieren</button>
@@ -51,7 +51,7 @@ $(document).ready(function () {
     $toggle.prop('checked', false);
   } else {
     $consentContainer.html(`
-      <div class="c-cookie-consent__content">
+      <div class="c-cookie-consent-hint__content">
         <h3 class="c-heading c-heading--h3">Spotify Einbindung?</h3>
         <p class="c-text">Um Spotify-Inhalte zu laden, benötigen ich deine Zustimmung. Die Zustimmung
             aktiviert das Tracking von Spotify. Du kannst deine Zustimmung über die
