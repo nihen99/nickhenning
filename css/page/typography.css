@@ -68,7 +68,7 @@ Paragraphs
 
 .c-text--sm {
     font-size: var(--font-size--sm);
-    margin-bottom: var(--space);
+    margin-bottom: var(--space--lg);
 }
 
 .c-text--muted {
