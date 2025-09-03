@@ -68,14 +68,15 @@ Paragraphs
 
 .c-text--sm {
     font-size: var(--font-size--sm);
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space);
 }
 
 .c-text--muted {
-    color: var(--color-component--gray);
+    color: var(--color-component--darkgray);
 }
 
 .c-text--center {
+    max-width: 100% !important;
     text-align: center;
 }
 
