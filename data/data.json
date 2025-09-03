@@ -79,6 +79,7 @@
     },
     "modal": {
         "cookieConsent": {
+            "buttonTrigger": "Datenschutz-Einstellungen öffnen",
             "title": "Datenschutz-Einstellungen",
             "p01": "Wenn du externe Inhalte wie Spotify aktivierst, stelle ich eine Verbindung zu den Servern des jeweiligen Drittanbieters her. Dabei können personenbezogene Daten wie deine IP-Adresse, Geräteinformationen oder dein Nutzungsverhalten an Spotify übermittelt und dort verarbeitet werden.",
             "p02": "Spotify kann diese Daten verwenden, um Inhalte bereitzustellen, dein Verhalten zu analysieren und dir personalisierte Werbung anzuzeigen. Die Datenverarbeitung erfolgt außerhalb meines Einflussbereichs und kann auch in Ländern stattfinden, in denen kein mit der EU vergleichbares Datenschutzniveau besteht.",
